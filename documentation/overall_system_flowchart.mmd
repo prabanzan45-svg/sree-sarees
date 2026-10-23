@@ -1,0 +1,132 @@
+%% =====================================================================
+%% SREE SAREES - OVERALL SYSTEM FLOWCHART
+%% Final Year College Project Academic Report Diagram
+%% Title: OVERALL SYSTEM FLOWCHART – SREE SAREES WEBSITE
+%% =====================================================================
+
+flowchart TD
+    %% Global Styling Classes (Academic Clean Black & White / Grayscale)
+    classDef startEnd fill:#ffffff,stroke:#000000,stroke-width:2.5px,color:#000000,font-weight:bold;
+    classDef process fill:#ffffff,stroke:#000000,stroke-width:1.8px,color:#000000;
+    classDef decision fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000,font-weight:bold;
+    classDef io fill:#fdfdfd,stroke:#000000,stroke-width:1.8px,color:#000000;
+    classDef database fill:#f8f9fa,stroke:#000000,stroke-width:2px,color:#000000,font-weight:bold;
+
+    %% -------------------------------------------------------------
+    %% 1. START AND WEBSITE ACCESS
+    %% -------------------------------------------------------------
+    START([Start]):::startEnd --> OPEN_WEB[/"Open Sree Sarees Website"/]:::io
+    OPEN_WEB --> HOME_PAGE[/"Display Home Page & Main Navigation"/]:::io
+    
+    HOME_PAGE --> MAIN_NAV{"Select User Activity"}:::decision
+
+    %% -------------------------------------------------------------
+    %% 2. BROWSE SAREE CATEGORIES
+    %% -------------------------------------------------------------
+    MAIN_NAV -->|"1. Saree Shopping"| CAT_MENU[/"Display 4 Main Saree Collections:&#13;1. Cotton Sarees&#13;2. Silk Sarees&#13;3. Kalamkari Sarees&#13;4. Fancy Sarees"/]:::io
+    
+    CAT_MENU --> CHOOSE_CAT[/"Customer Selects Desired Saree Category"/]:::io
+    CHOOSE_CAT --> FETCH_SAREES[("Query Saree Catalogue&#13;Database (MongoDB / JSON)")]:::database
+    FETCH_SAREES --> DISP_SAREES[/"Display Available Sarees&#13;(10 Weaves per Category / 40 Total)"/]:::io
+    
+    DISP_SAREES --> SEARCH_FILTER{/"Search or Filter Products?"/}:::decision
+    SEARCH_FILTER -->|"Yes"| APPLY_FILTER["Apply Filters: Fabric, Color, Price Range, or Search Query"]:::process
+    APPLY_FILTER --> DISP_SAREES
+    SEARCH_FILTER -->|"No"| SELECT_SAREE[/"Select Saree to View Details"/]:::io
+
+    SELECT_SAREE --> VIEW_DETAILS[/"View Saree Product Details:&#13;5.5m Saree + 0.8m Blouse Piece Specs, Price & Photos"/]:::io
+
+    %% -------------------------------------------------------------
+    %% 3. CUSTOMER SHOPPING PROCESS
+    %% -------------------------------------------------------------
+    VIEW_DETAILS --> ADD_CART["Click 'Add to Cart' Button"]:::process
+    ADD_CART --> VIEW_CART[/"View Shopping Cart Drawer / Cart Page"/]:::io
+    VIEW_CART --> CART_OPTS["Update Item Quantity or Remove Product"]:::process
+    CART_OPTS --> PROCEED_CHK["Click 'Proceed to Checkout'"]:::process
+    
+    PROCEED_CHK --> CHK_EMPTY{"Is the Shopping&#13;Cart Empty?"}:::decision
+    CHK_EMPTY -->|"Yes"| EMPTY_MSG[/"Display Empty Bag Message & Encourage Browsing"/]:::io
+    EMPTY_MSG --> DISP_SAREES
+    
+    %% -------------------------------------------------------------
+    %% 4. CUSTOMER AND ORDER DETAILS
+    %% -------------------------------------------------------------
+    CHK_EMPTY -->|"No"| CUST_INFO[/"Enter Customer Details: Full Name, 10-Digit Phone, Email"/]:::io
+    CUST_INFO --> DELIV_ADDR[/"Enter Delivery Address: Street, City, State, Pincode"/]:::io
+    DELIV_ADDR --> SELECT_PAY[/"Select Payment Method:&#13;1. Cash on Delivery (COD)&#13;2. Direct UPI QR&#13;3. Online Gateway"/]:::io
+    SELECT_PAY --> VALIDATE_FORM["Validate Customer, Address, and Contact Details"]:::process
+    
+    VALIDATE_FORM --> CHK_VALID{"Are Order Details&#13;Valid?"}:::decision
+    CHK_VALID -->|"No"| SHOW_ERR[/"Display Error Message & Highlight Required Fields"/]:::io
+    SHOW_ERR --> CUST_INFO
+    
+    CHK_VALID -->|"Yes"| CALC_TOTAL["Calculate Saree Subtotal, Delivery Fee (&gt;=₹5000: Free, Else ₹150) &amp; Final Total"]:::process
+
+    %% -------------------------------------------------------------
+    %% 5. ORDER PROCESSING
+    %% -------------------------------------------------------------
+    CALC_TOTAL --> VERIFY_STOCK["Server Verification: Validate Product Prices &amp; Stock Availability"]:::process
+    VERIFY_STOCK --> CHK_STOCK{"Is Boutique Stock&#13;Available?"}:::decision
+    CHK_STOCK -->|"No"| OUT_OF_STOCK[/"Display Insufficient Stock Notice"/]:::io
+    OUT_OF_STOCK --> VIEW_CART
+
+    CHK_STOCK -->|"Yes"| SAVE_ORDER_DB[("Save Complete Order Record&#13;in Orders Database")]:::database
+    SAVE_ORDER_DB --> GEN_ORDER_ID["Generate Unique Order ID (#SS10XX)"]:::process
+    GEN_ORDER_ID --> DEDUCT_STOCK[("Deduct Saree Inventory &amp;&#13;Record StockMovement Audit Log")]:::database
+    DEDUCT_STOCK --> DISP_CONFIRM[/"Display Order Confirmation Screen on Website&#13;with Order ID, Total, &amp; Payment Status"/]:::io
+
+    %% -------------------------------------------------------------
+    %% 6. OWNER WHATSAPP NOTIFICATION
+    %% -------------------------------------------------------------
+    DISP_CONFIRM --> ASSEMBLE_WA["Assemble 11-Point Order Alert for Boutique Owner&#13;Target Number: +91 9087637123&#13;(Order ID, Customer Info, Items, Prices, Total, COD Status, IST Timestamp)"]:::process
+    ASSEMBLE_WA --> CHECK_WA_CONFIG{"Are Meta WhatsApp&#13;API Credentials&#13;Configured in .env?"}:::decision
+    
+    CHECK_WA_CONFIG -->|"Yes"| TRANSMIT_META[/"Transmit via Meta WhatsApp Cloud API to +91 9087637123"/]:::io
+    TRANSMIT_META --> CHK_META_DELIVERY{"Was WhatsApp Notification&#13;Delivered to Gateway?"}:::decision
+    CHK_META_DELIVERY -->|"Yes"| RECORD_SUCCESS[("Record Notification Status:&#13;DELIVERED_TO_GATEWAY (Message ID Logged)")]:::database
+    CHK_META_DELIVERY -->|"No"| RECORD_GATEWAY_FAIL[("Record Failure: API_ERROR&#13;Preserve Saved Order in Database")]:::database
+    
+    CHECK_WA_CONFIG -->|"No"| RECORD_CONFIG_REQ[("Record Status: CONFIG_REQUIRED&#13;Log Full Message in Server Console &amp;&#13;Preserve Saved Order in Database")]:::database
+    RECORD_CONFIG_REQ --> DISP_WA_FALLBACK[/"Display Honest Status on Website Confirmation&#13;+ Provide 1-Click WhatsApp Web Direct Alert Link"/]:::io
+    DISP_WA_FALLBACK --> ALLOW_RETRY["Allow Direct Alert / Retry Without Losing Saved Order"]:::process
+    
+    RECORD_SUCCESS --> ORDER_COMPLETE([Order Completed Successfully]):::startEnd
+    RECORD_GATEWAY_FAIL --> ORDER_COMPLETE
+    ALLOW_RETRY --> ORDER_COMPLETE
+
+    %% -------------------------------------------------------------
+    %% 7. SREE AI SHOPPING ASSISTANT
+    %% -------------------------------------------------------------
+    MAIN_NAV -->|"2. Sree AI Assistant"| OPEN_AI[/"Customer Opens Sree AI Shopping Assistant Widget"/]:::io
+    OPEN_AI --> INPUT_AI_QUERY[/"Enter Natural Language Shopping Question:&#13;Colors, Fabrics, Price under ₹1500, Cheapest Saree, Care Tips"/]:::io
+    INPUT_AI_QUERY --> QUERY_AI_DB[("Query Live Saree Catalogue Database&#13;(MongoDB / JSON Store)")]:::database
+    QUERY_AI_DB --> PROCESS_AI_NLP["Sree AI Query Processing:&#13;Category &amp; Intent Matching or Google Gemini Multi-Turn Reasoning"]:::process
+    PROCESS_AI_NLP --> DISP_AI_CARDS[/"Display Matching Saree Cards with Real Photos,&#13;Accurate Prices, Stock Badges &amp; Add to Cart Buttons"/]:::io
+    DISP_AI_CARDS --> AI_USER_CHOICE{"Customer Next Action"}:::decision
+    AI_USER_CHOICE -->|"Add Saree to Cart"| ADD_CART
+    AI_USER_CHOICE -->|"Ask Follow-up / Return"| HOME_PAGE
+
+    %% -------------------------------------------------------------
+    %% 8. ADDITIONAL TRADITIONAL SERVICES
+    %% -------------------------------------------------------------
+    MAIN_NAV -->|"3. Traditional Services"| SERVICE_BRANCH{"Select Service"}:::decision
+    
+    %% Blouse Stitching
+    SERVICE_BRANCH -->|"Blouse Stitching"| BLOUSE_PAGE[/"Open Blouse Stitching Service Page (/blouse-stitching)"/]:::io
+    BLOUSE_PAGE --> BLOUSE_INPUT[/"Enter Measurements in Inches (Bust, Waist, Shoulder, Length)&#13;&amp; Select Necklines, Sleeves, Lining Options"/]:::io
+    BLOUSE_INPUT --> BLOUSE_SUBMIT["Submit Custom Tailoring Enquiry (POST /api/enquiries/blouse)"]:::process
+    BLOUSE_SUBMIT --> BLOUSE_SAVE_DB[("Generate BLS-XXXX Tracking ID &amp;&#13;Save to Enquiries Database")]:::database
+    BLOUSE_SAVE_DB --> BLOUSE_ACK[/"Display Transparent Master Tailor Quotation Notice &amp;&#13;Provide Enquiry Reference ID"/]:::io
+    BLOUSE_ACK --> SERVICE_END([Enquiry Logged &amp; Return to Home]):::startEnd
+
+    %% Aari Work Classes
+    SERVICE_BRANCH -->|"Aari Work Classes"| AARI_PAGE[/"Open Aari Work Class Portal (/aari-work-class)"/]:::io
+    AARI_PAGE --> AARI_INPUT[/"Select Learning Format (Online Live / Offline Madurai),&#13;Preferred Batch Timings &amp; Starter Kit Request"/]:::io
+    AARI_INPUT --> AARI_SUBMIT["Submit Class Registration Enquiry (POST /api/enquiries/aari)"]:::process
+    AARI_SUBMIT --> AARI_SAVE_DB[("Generate AARI-XXXX Registration ID &amp;&#13;Save to Enquiries Database")]:::database
+    AARI_SAVE_DB --> AARI_ACK[/"Display Syllabus, Kit Details, Registration Confirmation &amp;&#13;Batch Coordinator Follow-up Notice"/]:::io
+    AARI_ACK --> SERVICE_END
+
+    %% Overall System Termination
+    ORDER_COMPLETE --> SYSTEM_END([End]):::startEnd
+    SERVICE_END --> SYSTEM_END

@@ -1,0 +1,643 @@
+[
+  {
+    "_id": "ord_sample_001",
+    "orderNumber": "SS1001",
+    "customer": "usr_cust_001",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "customer@example.com",
+    "customerPhone": "+91 98765 43210",
+    "items": [
+      {
+        "productId": "SS-SLK-001",
+        "name": "Crimson Red Kanjivaram Style Soft Silk Saree",
+        "price": 1499,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1610030469854-e67c87c14a52?auto=format&fit=crop&w=800&q=80",
+        "fabric": "Soft Silk",
+        "colour": "Red",
+        "subtotal": 1499
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "+91 98765 43210",
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "subtotal": 1499,
+    "deliveryCharge": 0,
+    "finalTotal": 1499,
+    "orderStatus": "Delivered",
+    "paymentStatus": "Paid",
+    "paymentMethod": "UPI_GATEWAY",
+    "paymentReference": "pay_rzp_mock10012026",
+    "notes": "Customer requested festive gift packaging",
+    "createdAt": "2026-10-16T06:15:23.673Z",
+    "updatedAt": "2026-10-17T06:15:23.673Z"
+  },
+  {
+    "_id": "ord_2fy9lo9",
+    "orderNumber": "SS1002",
+    "customer": "usr_cust_001",
+    "customerName": "Test Customer",
+    "customerEmail": "customer@example.com",
+    "customerPhone": "+91 9988776655",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-SLK-001",
+        "name": "Crimson Red Kanjivaram Style Soft Silk Saree",
+        "price": 1499,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1610030469854-e67c87c14a52?auto=format&fit=crop&w=800&q=80",
+        "fabric": "Soft Silk",
+        "colour": "Red",
+        "subtotal": 1499
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Test Customer",
+      "phone": "+91 9988776655",
+      "addressLine": "12 Temple Street, T Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017"
+    },
+    "subtotal": 1499,
+    "deliveryCharge": 0,
+    "finalTotal": 1499,
+    "orderStatus": "Shipped",
+    "paymentStatus": "Paid",
+    "paymentMethod": "UPI_GATEWAY",
+    "paymentReference": "pay_test_gpay_1792304157653",
+    "notes": "Dispatched via express courier",
+    "createdAt": "2026-10-18T06:15:57.633Z",
+    "updatedAt": "2026-10-18T06:15:57.664Z"
+  },
+  {
+    "_id": "ord_xvd8lcv",
+    "orderNumber": "SS1003",
+    "customer": "usr_cust_001",
+    "customerName": "Test Customer",
+    "customerEmail": "customer@example.com",
+    "customerPhone": "+91 9988776655",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-SLK-001",
+        "name": "Crimson Red Kanjivaram Style Soft Silk Saree",
+        "price": 1499,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1610030469854-e67c87c14a52?auto=format&fit=crop&w=800&q=80",
+        "fabric": "Soft Silk",
+        "colour": "Red",
+        "subtotal": 1499
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Test Customer",
+      "phone": "+91 9988776655",
+      "addressLine": "12 Temple Street, T Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017"
+    },
+    "subtotal": 1499,
+    "deliveryCharge": 150,
+    "finalTotal": 1649,
+    "orderStatus": "Shipped",
+    "paymentStatus": "Paid",
+    "paymentMethod": "UPI_GATEWAY",
+    "paymentReference": "pay_test_gpay_1792322550627",
+    "notes": "Dispatched via express blue dart courier",
+    "createdAt": "2026-10-18T11:22:30.593Z",
+    "updatedAt": "2026-10-18T11:22:30.631Z"
+  },
+  {
+    "_id": "ord_nmd2wor",
+    "orderNumber": "SS1004",
+    "customer": "usr_kp4wgnk",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792325169073@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Terracotta Rust Mangalagiri Pure Cotton Saree",
+        "price": 699,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+        "fabric": "Mangalagiri Cotton",
+        "colour": "Rust Terracotta",
+        "subtotal": 699
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "subtotal": 699,
+    "deliveryCharge": 150,
+    "finalTotal": 849,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "NOT_CONFIGURED",
+      "customerSent": false,
+      "customerStatus": "NOT_CONFIGURED",
+      "updatedAt": "2026-10-18T12:06:09.209Z"
+    },
+    "notes": "Please pack in festive gift wrap.",
+    "createdAt": "2026-10-18T12:06:09.194Z",
+    "updatedAt": "2026-10-18T12:06:09.209Z"
+  },
+  {
+    "_id": "ord_x87cdq7",
+    "orderNumber": "SS1005",
+    "customer": "usr_gepu6jf",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792325219032@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Terracotta Rust Mangalagiri Pure Cotton Saree",
+        "price": 699,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+        "fabric": "Mangalagiri Cotton",
+        "colour": "Rust Terracotta",
+        "subtotal": 699
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "subtotal": 699,
+    "deliveryCharge": 150,
+    "finalTotal": 849,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "NOT_CONFIGURED",
+      "customerSent": false,
+      "customerStatus": "NOT_CONFIGURED",
+      "updatedAt": "2026-10-18T12:06:59.173Z"
+    },
+    "notes": "Please pack in festive gift wrap.",
+    "createdAt": "2026-10-18T12:06:59.157Z",
+    "updatedAt": "2026-10-18T12:06:59.173Z"
+  },
+  {
+    "_id": "ord_tffr0h1",
+    "orderNumber": "SS1006",
+    "customer": "usr_ilsdmmo",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792326936361@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Terracotta Rust Mangalagiri Pure Cotton Saree",
+        "price": 699,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+        "fabric": "Mangalagiri Cotton",
+        "colour": "Rust Terracotta",
+        "subtotal": 699
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "subtotal": 699,
+    "deliveryCharge": 150,
+    "finalTotal": 849,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "NOT_CONFIGURED",
+      "customerSent": false,
+      "customerStatus": "NOT_CONFIGURED",
+      "updatedAt": "2026-10-18T12:35:36.502Z"
+    },
+    "notes": "Please pack in festive gift wrap.",
+    "createdAt": "2026-10-18T12:35:36.486Z",
+    "updatedAt": "2026-10-18T12:35:36.502Z"
+  },
+  {
+    "_id": "ord_s70joyg",
+    "orderNumber": "SS1007",
+    "customer": "usr_6o73ga4",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792330232782@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Terracotta Rust Mangalagiri Pure Cotton Saree",
+        "price": 699,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-1.jpg",
+        "fabric": "Mangalagiri Pure Cotton",
+        "colour": "Rust Terracotta",
+        "subtotal": 699
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "subtotal": 699,
+    "deliveryCharge": 150,
+    "finalTotal": 849,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "NOT_CONFIGURED",
+      "customerSent": false,
+      "customerStatus": "NOT_CONFIGURED",
+      "updatedAt": "2026-10-18T13:30:32.957Z"
+    },
+    "notes": "Please pack carefully.",
+    "createdAt": "2026-10-18T13:30:32.924Z",
+    "updatedAt": "2026-10-18T13:30:32.957Z"
+  },
+  {
+    "_id": "ord_x1o16s0",
+    "orderNumber": "SS1008",
+    "customer": "usr_irwwwvc",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792422386686@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Chettinad Cotton Temple Border Saree",
+        "price": 749,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-1.jpg",
+        "fabric": "Chettinad Pure Cotton",
+        "colour": "Maroon & Mustard",
+        "subtotal": 749
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "subtotal": 749,
+    "deliveryCharge": 150,
+    "finalTotal": 899,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "NOT_CONFIGURED",
+      "customerSent": false,
+      "customerStatus": "NOT_CONFIGURED",
+      "updatedAt": "2026-10-19T15:06:26.834Z"
+    },
+    "notes": "Please pack carefully.",
+    "createdAt": "2026-10-19T15:06:26.770Z",
+    "updatedAt": "2026-10-19T15:06:26.834Z"
+  },
+  {
+    "_id": "ord_kpj3g3u",
+    "orderNumber": "SS1009",
+    "customer": "usr_clmj9y7",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792424215901@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Chettinad Cotton Temple Border Saree",
+        "price": 749,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-1.jpg",
+        "fabric": "Chettinad Pure Cotton",
+        "colour": "Maroon & Mustard",
+        "subtotal": 749
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "subtotal": 749,
+    "deliveryCharge": 150,
+    "finalTotal": 899,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "NOT_CONFIGURED",
+      "customerSent": false,
+      "customerStatus": "NOT_CONFIGURED",
+      "updatedAt": "2026-10-19T15:36:55.995Z"
+    },
+    "notes": "Please pack carefully.",
+    "createdAt": "2026-10-19T15:36:55.970Z",
+    "updatedAt": "2026-10-19T15:36:55.995Z"
+  },
+  {
+    "_id": "ord_fla0noo",
+    "orderNumber": "SS1010",
+    "customer": "usr_4ybifat",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792425262617@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Chettinad Cotton Temple Border Saree",
+        "price": 749,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-1.jpg",
+        "fabric": "Chettinad Pure Cotton",
+        "colour": "Maroon & Mustard",
+        "subtotal": 749
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "subtotal": 749,
+    "deliveryCharge": 150,
+    "finalTotal": 899,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "CONFIG_REQUIRED",
+      "recipient": "919087637123",
+      "messageId": null,
+      "error": "Meta WhatsApp Business API credentials (WHATSAPP_TOKEN / WHATSAPP_PHONE_NUMBER_ID) are required in server/.env for live transmission.",
+      "updatedAt": "2026-10-19T15:54:22.709Z"
+    },
+    "notes": "Please pack carefully.",
+    "createdAt": "2026-10-19T15:54:22.689Z",
+    "updatedAt": "2026-10-19T15:54:22.709Z"
+  },
+  {
+    "_id": "ord_7jhk78l",
+    "orderNumber": "SS1011",
+    "customer": "usr_hhvsp47",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "priya_1792425299363@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_001",
+        "productId": "SS-COT-001",
+        "name": "Chettinad Cotton Temple Border Saree",
+        "price": 749,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-1.jpg",
+        "fabric": "Chettinad Pure Cotton",
+        "colour": "Maroon & Mustard",
+        "subtotal": 749
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "subtotal": 749,
+    "deliveryCharge": 150,
+    "finalTotal": 899,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "CONFIG_REQUIRED",
+      "recipient": "919087637123",
+      "messageId": null,
+      "error": "Meta WhatsApp Business API credentials (WHATSAPP_TOKEN / WHATSAPP_PHONE_NUMBER_ID) are required in server/.env for live transmission.",
+      "updatedAt": "2026-10-19T15:54:59.462Z"
+    },
+    "notes": "Please pack carefully.",
+    "createdAt": "2026-10-19T15:54:59.441Z",
+    "updatedAt": "2026-10-19T15:54:59.462Z"
+  },
+  {
+    "_id": "ord_5y5srq3",
+    "orderNumber": "SS1012",
+    "customer": "usr_2q0b8k5",
+    "customerName": "snehavalli",
+    "customerEmail": "priyadharshini4650@gmail.com",
+    "customerPhone": "9789567555",
+    "items": [
+      {
+        "product": "prod_004",
+        "productId": "SS-COT-004",
+        "name": "Sunny Yellow Mulmul Daily Wear Cotton Saree",
+        "price": 499,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-4.jpg",
+        "fabric": "Pure Mulmul Cotton",
+        "colour": "Sunny Yellow",
+        "subtotal": 499
+      },
+      {
+        "product": "prod_003",
+        "productId": "SS-COT-003",
+        "name": "Mulmul Cotton Hand-Block Print Saree",
+        "price": 599,
+        "quantity": 1,
+        "image": "/images/sarees/cotton-3.jpg",
+        "fabric": "Mulmul Fine Cotton",
+        "colour": "Indigo Blue",
+        "subtotal": 599
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "snehavalli",
+      "phone": "9789567555",
+      "addressLine": "2,santhana murugan 1street,opp to kabali amman temple,madurai",
+      "city": "mad",
+      "state": "Tamil Nadu",
+      "pincode": "625004"
+    },
+    "subtotal": 1098,
+    "deliveryCharge": 150,
+    "finalTotal": 1248,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "CONFIG_REQUIRED",
+      "recipient": "919087637123",
+      "messageId": null,
+      "error": "Meta WhatsApp Business API credentials (WHATSAPP_TOKEN / WHATSAPP_PHONE_NUMBER_ID) are required in server/.env for live transmission.",
+      "updatedAt": "2026-10-19T15:57:21.727Z",
+      "messagePreview": "🌸 *SREE SAREES — NEW ORDER NOTIFICATION* 🌸\n_\"Tradition Woven with Elegance.\"_\n\n📦 *Order ID:* #SS1012\n📅 *Order Date & Time:* 19 Oct 2026, 09:27 pm (IST)\n\n👤 *Customer Details:*\n   • Name: *snehavalli*\n   • Phone Number: 9789567555\n   • Email: priyadharshini4650@gmail.com\n\n🛍️ *Ordered Sarees:*\n   1. *Sunny Yellow Mulmul Daily Wear Cotton Saree*\n      • Quantity: 1\n      • Price per Unit: ₹499\n      • Item Subtotal: ₹499\n   2. *Mulmul Cotton Hand-Block Print Saree*\n      • Quantity: 1\n      • Price per Unit: ₹599\n      • Item Subtotal: ₹599\n\n💰 *Price & Discount Summary:*\n   • Saree Subtotal: ₹1,098\n   • Delivery Charges: ₹150\n   • *Final Order Total:* *₹1,248*\n\n💳 *Payment Details:*\n   • Payment Method: *Cash on Delivery (COD)*\n   • Payment Status: *Pending*\n\n📍 *Customer Delivery Address:*\n   snehavalli\n   2,santhana murugan 1street,opp to kabali amman temple,madurai, mad, Tamil Nadu - 625004\n   Contact Phone: 9789567555\n\nℹ️ _Automatic dispatch to Owner WhatsApp Business (+91 9087637123). No website login required to prepare and ship this order._"
+    },
+    "notes": "",
+    "createdAt": "2026-10-19T15:57:21.651Z",
+    "updatedAt": "2026-10-19T15:57:21.727Z"
+  },
+  {
+    "_id": "ord_l7yq2hl",
+    "orderNumber": "SS1013",
+    "customer": "usr_cust_001",
+    "customerName": "Priyanka Devi",
+    "customerEmail": "customer@example.com",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "product": "prod_011",
+        "productId": "SS-SLK-001",
+        "name": "Kanjivaram Soft Silk Brocade Saree",
+        "price": 2199,
+        "quantity": 1,
+        "image": "/images/sarees/silk-1.jpg",
+        "fabric": "Kanjivaram Style Soft Silk",
+        "colour": "Crimson Red",
+        "subtotal": 2199
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "Priyanka Devi",
+      "phone": "9876543210",
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "subtotal": 2199,
+    "deliveryCharge": 150,
+    "finalTotal": 2349,
+    "orderStatus": "Placed",
+    "paymentStatus": "Pending",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "paymentReference": "",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "CONFIG_REQUIRED",
+      "recipient": "919087637123",
+      "messageId": null,
+      "messagePreview": "🌸 *SREE SAREES — NEW ORDER NOTIFICATION* 🌸\n_\"Tradition Woven with Elegance.\"_\n\n📦 *Order ID:* #SS1013\n📅 *Order Date & Time:* 20 Oct 2026, 11:01 am (IST)\n\n👤 *Customer Details:*\n   • Name: *Priyanka Devi*\n   • Phone Number: 9876543210\n   • Email: customer@example.com\n\n🛍️ *Ordered Sarees:*\n   1. *Kanjivaram Soft Silk Brocade Saree*\n      • Quantity: 1\n      • Price per Unit: ₹2,199\n      • Item Subtotal: ₹2,199\n\n💰 *Price & Discount Summary:*\n   • Saree Subtotal: ₹2,199\n   • Delivery Charges: ₹150\n   • *Final Order Total:* *₹2,349*\n\n💳 *Payment Details:*\n   • Payment Method: *Cash on Delivery (COD)*\n   • Payment Status: *Pending*\n\n📍 *Customer Delivery Address:*\n   Priyanka Devi\n   Flat 402, Royal Palms, South Masi Street, Madurai, Tamil Nadu - 625001\n   Contact Phone: 9876543210\n\nℹ️ _Automatic dispatch to Owner WhatsApp Business (+91 9087637123). No website login required to prepare and ship this order._",
+      "error": "Meta WhatsApp Business API credentials (WHATSAPP_TOKEN / WHATSAPP_PHONE_NUMBER_ID) are required in server/.env for live transmission.",
+      "updatedAt": "2026-10-20T05:31:51.258Z"
+    },
+    "notes": "",
+    "createdAt": "2026-10-20T05:31:51.152Z",
+    "updatedAt": "2026-10-20T05:31:51.258Z"
+  },
+  {
+    "_id": "ord_3sv9am1",
+    "orderNumber": "SS1014",
+    "customer": "usr_2q0b8k5",
+    "customerName": "snehavalli",
+    "customerEmail": "priyadharshini4650@gmail.com",
+    "customerPhone": "9789567555",
+    "items": [
+      {
+        "product": "prod_035",
+        "productId": "SS-FNC-005",
+        "name": "Royal Magenta All-Over Paithani Style Fancy Saree",
+        "price": 1549,
+        "quantity": 1,
+        "image": "/images/sarees/fancy-5.jpg",
+        "fabric": "Paithani Art Silk",
+        "colour": "Royal Magenta & Antique Gold",
+        "subtotal": 1549
+      }
+    ],
+    "deliveryAddress": {
+      "fullName": "snehavalli",
+      "phone": "9789567555",
+      "addressLine": "2,santhana muru",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017"
+    },
+    "subtotal": 1549,
+    "deliveryCharge": 150,
+    "finalTotal": 1699,
+    "orderStatus": "Placed",
+    "paymentStatus": "Paid",
+    "paymentMethod": "UPI_GATEWAY",
+    "paymentReference": "pay_gpay_test_MVL6LP4M",
+    "whatsappNotifications": {
+      "ownerSent": false,
+      "ownerStatus": "CONFIG_REQUIRED",
+      "recipient": "919087637123",
+      "messageId": null,
+      "messagePreview": "🌸 *SREE SAREES — NEW ORDER NOTIFICATION* 🌸\n_\"Tradition Woven with Elegance.\"_\n\n📦 *Order ID:* #SS1014\n📅 *Order Date & Time:* 23 Oct 2026, 09:55 pm (IST)\n\n👤 *Customer Details:*\n   • Name: *snehavalli*\n   • Phone Number: 9789567555\n   • Email: priyadharshini4650@gmail.com\n\n🛍️ *Ordered Sarees:*\n   1. *Royal Magenta All-Over Paithani Style Fancy Saree*\n      • Quantity: 1\n      • Price per Unit: ₹1,549\n      • Item Subtotal: ₹1,549\n\n💰 *Price & Discount Summary:*\n   • Saree Subtotal: ₹1,549\n   • Delivery Charges: ₹150\n   • *Final Order Total:* *₹1,699*\n\n💳 *Payment Details:*\n   • Payment Method: *Online Payment (Google Pay / UPI Gateway)*\n   • Payment Status: *Pending*\n\n📍 *Customer Delivery Address:*\n   snehavalli\n   2,santhana muru, Chennai, Tamil Nadu - 600017\n   Contact Phone: 9789567555\n\nℹ️ _Automatic dispatch to Owner WhatsApp Business (+91 9087637123). No website login required to prepare and ship this order._",
+      "error": "Meta WhatsApp Business API credentials (WHATSAPP_TOKEN / WHATSAPP_PHONE_NUMBER_ID) are required in server/.env for live transmission.",
+      "updatedAt": "2026-10-23T16:25:42.096Z"
+    },
+    "notes": "",
+    "createdAt": "2026-10-23T16:25:42.031Z",
+    "updatedAt": "2026-10-23T16:25:42.280Z"
+  }
+]

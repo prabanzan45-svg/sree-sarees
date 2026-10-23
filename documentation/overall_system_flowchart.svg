@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1750 3450" width="1750" height="3450">
+  <defs>
+    <!-- Solid Sharp Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#111827" />
+    </marker>
+    <!-- Green Arrowhead for Success -->
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#065f46" />
+    </marker>
+    <!-- Red Arrowhead for Failure / Retry -->
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#991b1b" />
+    </marker>
+    <!-- Subtle Drop Shadow Filter -->
+    <filter id="card-shadow" x="-3%" y="-3%" width="106%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-main { font-family: 'Segoe UI', Arial, sans-serif; font-size: 26px; font-weight: 800; fill: #111827; letter-spacing: 0.5px; }
+    .title-sub { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #4b5563; }
+    .col-header { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; fill: #1f2937; }
+    .module-tag { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; fill: #4b5563; }
+    .node-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .node-bold { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .node-subtext { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #4b5563; text-anchor: middle; dominant-baseline: middle; }
+    .decision-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .label-yes { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 800; fill: #065f46; text-anchor: middle; }
+    .label-no { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 800; fill: #991b1b; text-anchor: middle; }
+    .label-branch { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 700; fill: #1f2937; }
+    .legend-title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: 800; fill: #111827; text-transform: uppercase; letter-spacing: 0.5px; }
+    .legend-desc { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; font-weight: 600; fill: #374151; }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1750" height="3450" fill="#ffffff" />
+  
+  <!-- Outer Academic Frame -->
+  <rect x="25" y="25" width="1700" height="3400" fill="none" stroke="#1f2937" stroke-width="2" />
+  <rect x="31" y="31" width="1688" height="3388" fill="none" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- HEADER BANNER -->
+  <g id="header">
+    <rect x="42" y="42" width="1666" height="76" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5" />
+    <text x="875" y="73" text-anchor="middle" class="title-main">OVERALL SYSTEM FLOWCHART – SREE SAREES WEBSITE</text>
+    <text x="875" y="98" text-anchor="middle" class="title-sub">Academic Final-Year Project Report | End-to-End Operational Workflow &amp; System Integration</text>
+  </g>
+
+  <!-- COLUMN BOUNDARY BACKGROUND PANELS -->
+  <!-- Left Panel: Sree AI -->
+  <rect x="42" y="130" width="460" height="3050" rx="6" fill="#fafafa" stroke="#e5e7eb" stroke-width="1" />
+  <rect x="42" y="130" width="460" height="34" rx="6" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" />
+  <text x="272" y="152" text-anchor="middle" class="col-header">MODULE 7: SREE AI SHOPPING ASSISTANT</text>
+
+  <!-- Center Panel: Core E-Commerce -->
+  <rect x="522" y="130" width="706" height="3050" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1.2" />
+  <rect x="522" y="130" width="706" height="34" rx="6" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.2" />
+  <text x="875" y="152" text-anchor="middle" class="col-header">MODULES 1–6: CORE E-COMMERCE &amp; ORDER FULFILLMENT WORKFLOW</text>
+
+  <!-- Right Panel: Traditional Services -->
+  <rect x="1248" y="130" width="460" height="3050" rx="6" fill="#fafafa" stroke="#e5e7eb" stroke-width="1" />
+  <rect x="1248" y="130" width="460" height="34" rx="6" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" />
+  <text x="1478" y="152" text-anchor="middle" class="col-header">MODULE 8: TRADITIONAL SERVICES PORTAL</text>
+
+    <g class="flow-node">
+      <rect x="765" y="180" width="220" height="48" rx="24" ry="24" fill="#ffffff" stroke="#111827" stroke-width="2.2" filter="url(#card-shadow)" />
+      <text x="875" y="196" class="node-bold">START</text>
+      <text x="875" y="214" class="node-subtext">Begin System Session</text>
+    </g>
+  
+    <line x1="875" y1="228" x2="875" y2="255" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="685,255 1085,255 1065,307 665,307" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="693" y="270" class="module-tag">ENTRY POINT</text>
+      <text x="875" y="271.5" class="node-text">Open Sree Sarees Website</text>
+<text x="875" y="290.5" class="node-text">Load React SPA in Browser</text>
+    </g>
+  
+    <line x1="875" y1="307" x2="875" y2="335" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="665,335 1105,335 1085,387 645,387" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="673" y="350" class="module-tag">HOMEPAGE</text>
+      <text x="875" y="351.5" class="node-text">Display Home Page &amp; Main Navigation</text>
+<text x="875" y="370.5" class="node-text">Tagline: "Tradition Woven with Elegance."</text>
+    </g>
+  
+    <line x1="875" y1="387" x2="875" y2="420" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="875,420 1045,465 875,510 705,465" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="875" y="455.5" class="decision-text">Select Customer Activity Hub</text>
+<text x="875" y="474.5" class="decision-text">Choose Desired Website Path</text>
+    </g>
+  
+    <line x1="875" y1="510" x2="875" y2="550" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="893" y="530" class="label-branch">1. Saree Shopping</text>
+  
+    <path d="M 705 465 L 272 465 L 272 550" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="292" y="455" class="label-branch">2. Sree AI Assistant</text>
+  
+    <path d="M 1045 465 L 1478 465 L 1478 550" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="1358" y="455" class="label-branch">3. Traditional Services</text>
+  
+    <g class="flow-node">
+      <polygon points="655,550 1115,550 1095,618 635,618" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="663" y="565" class="module-tag">MODULE 2: BROWSE</text>
+      <text x="875" y="565" class="node-text">Display 4 Main Saree Collections:</text>
+<text x="875" y="584" class="node-text">1. Cotton Sarees   2. Silk Sarees</text>
+<text x="875" y="603" class="node-text">3. Kalamkari Sarees   4. Fancy Sarees</text>
+    </g>
+  
+    <line x1="875" y1="618" x2="875" y2="645" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="680,645 1090,645 1070,695 660,695" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="660.5" class="node-text">Customer Selects Saree Category</text>
+<text x="875" y="679.5" class="node-text">e.g., Silk Sarees or Cotton Sarees</text>
+    </g>
+  
+    <line x1="875" y1="695" x2="875" y2="725" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <path d="M 665 738 
+               A 210 13 0 0 1 1085 738 
+               L 1085 780 
+               A 210 13 0 0 1 665 780 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 665 780 A 210 13 0 0 0 1085 780" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="875" cy="738" rx="210" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="875" y="740" class="module-tag" text-anchor="middle" fill="#4b5563">[MONGODB / JSON STORE]</text>
+      <text x="875" y="753.5" class="node-bold">Query Saree Catalogue Database</text>
+<text x="875" y="772.5" class="node-bold">Fetch 10 Products per Category (40 Total)</text>
+    </g>
+  
+    <line x1="875" y1="793" x2="875" y2="825" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="670,825 1100,825 1080,879 650,879" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="842.5" class="node-text">Display Available Sarees in Category</text>
+<text x="875" y="861.5" class="node-text">Fabric, Color, Draped Photography &amp; Real Prices</text>
+    </g>
+  
+    <line x1="875" y1="879" x2="875" y2="915" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="875,915 1020,955 875,995 730,955" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="875" y="945.5" class="decision-text">Search or Filter</text>
+<text x="875" y="964.5" class="decision-text">Products?</text>
+    </g>
+  
+    <path d="M 1020 955 L 1150 955 L 1150 852 L 1100 852" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="1030" y="945" class="label-yes">Yes</text>
+  
+    <line x1="875" y1="995" x2="875" y2="1030" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="893" y="1012.5" class="label-no">No</text>
+  
+    <g class="flow-node">
+      <polygon points="665,1030 1105,1030 1085,1084 645,1084" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1047.5" class="node-text">View Saree Product Details Screen</text>
+<text x="875" y="1066.5" class="node-text">5.5m Saree + 0.8m Blouse Piece Specs, Zari &amp; Care</text>
+    </g>
+  
+    <line x1="875" y1="1084" x2="875" y2="1115" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="660" y="1115" width="430" height="50" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="670" y="1130" class="module-tag">MODULE 3: CART</text>
+      <text x="875" y="1130.5" class="node-text">Customer Clicks "Add to Cart"</text>
+<text x="875" y="1149.5" class="node-text">Product Stored in Cart State with Quantity</text>
+    </g>
+  
+    <line x1="875" y1="1165" x2="875" y2="1195" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="670,1195 1100,1195 1080,1245 650,1245" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1210.5" class="node-text">View Shopping Cart Drawer / Cart Page</text>
+<text x="875" y="1229.5" class="node-text">Review Items, Quantities, Prices &amp; Subtotal</text>
+    </g>
+  
+    <line x1="875" y1="1245" x2="875" y2="1275" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="665" y="1275" width="420" height="48" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1289.5" class="node-text">Update Item Quantity or Remove Product</text>
+<text x="875" y="1308.5" class="node-text">Live Subtotal Recalculated Dynamically</text>
+    </g>
+  
+    <line x1="875" y1="1323" x2="875" y2="1355" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="675" y="1355" width="400" height="46" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1378" class="node-text">Customer Clicks "Proceed to Checkout"</text>
+    </g>
+  
+    <line x1="875" y1="1401" x2="875" y2="1435" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="875,1435 1010,1475 875,1515 740,1475" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="875" y="1465.5" class="decision-text">Is Shopping Cart</text>
+<text x="875" y="1484.5" class="decision-text">Empty?</text>
+    </g>
+  
+    <path d="M 740 1475 L 595 1475 L 595 852 L 650 852" fill="none" stroke="#111827" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+    <text x="700" y="1465" class="label-yes">Yes</text>
+  
+    <line x1="875" y1="1515" x2="875" y2="1555" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="893" y="1535" class="label-no">No</text>
+  
+    <g class="flow-node">
+      <polygon points="665,1555 1105,1555 1085,1607 645,1607" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="673" y="1570" class="module-tag">MODULE 4: CHECKOUT</text>
+      <text x="875" y="1571.5" class="node-text">Enter Customer Details &amp; Delivery Address</text>
+<text x="875" y="1590.5" class="node-text">Full Name, 10-Digit Mobile, Street, City, Pincode</text>
+    </g>
+  
+    <line x1="875" y1="1607" x2="875" y2="1635" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="670,1635 1100,1635 1080,1687 650,1687" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1651.5" class="node-text">Select Payment Method:</text>
+<text x="875" y="1670.5" class="node-text">1. Cash on Delivery (COD) | 2. Direct UPI | 3. Gateway</text>
+    </g>
+  
+    <line x1="875" y1="1687" x2="875" y2="1715" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="660" y="1715" width="430" height="48" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1729.5" class="node-text">Validate Customer &amp; Delivery Form Input</text>
+<text x="875" y="1748.5" class="node-text">Validate Address Fields &amp; 10-Digit Mobile Number</text>
+    </g>
+  
+    <line x1="875" y1="1763" x2="875" y2="1795" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="875,1795 1005,1835 875,1875 745,1835" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="875" y="1825.5" class="decision-text">Are Order Details</text>
+<text x="875" y="1844.5" class="decision-text">Valid?</text>
+    </g>
+  
+    <path d="M 745 1835 L 605 1835 L 605 1581 L 645 1581" fill="none" stroke="#111827" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+    <text x="705" y="1825" class="label-no">No</text>
+  
+    <line x1="875" y1="1875" x2="875" y2="1915" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="893" y="1895" class="label-yes">Yes</text>
+  
+    <g class="flow-node">
+      <rect x="645" y="1915" width="460" height="52" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="1931.5" class="node-text">Calculate Final Order Total:</text>
+<text x="875" y="1950.5" class="node-text">Subtotal + Delivery (Free if ≥ ₹5,000, Else ₹150)</text>
+    </g>
+  
+    <line x1="875" y1="1967" x2="875" y2="1995" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="650" y="1995" width="450" height="50" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="660" y="2010" class="module-tag">MODULE 5: PROCESSING</text>
+      <text x="875" y="2010.5" class="node-text">Server-Side Verification of Prices &amp; Stock</text>
+<text x="875" y="2029.5" class="node-text">Query Database for Trusted Price &amp; Live Inventory</text>
+    </g>
+  
+    <line x1="875" y1="2045" x2="875" y2="2075" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="875,2075 1005,2115 875,2155 745,2115" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="875" y="2105.5" class="decision-text">Is Boutique Stock</text>
+<text x="875" y="2124.5" class="decision-text">Available?</text>
+    </g>
+  
+    <path d="M 745 2115 L 580 2115 L 580 1220 L 650 1220" fill="none" stroke="#111827" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+    <text x="705" y="2105" class="label-no">No</text>
+  
+    <line x1="875" y1="2155" x2="875" y2="2195" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="893" y="2175" class="label-yes">Yes</text>
+  
+    <g class="flow-node">
+      <path d="M 660 2208 
+               A 215 13 0 0 1 1090 2208 
+               L 1090 2250 
+               A 215 13 0 0 1 660 2250 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 660 2250 A 215 13 0 0 0 1090 2250" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="875" cy="2208" rx="215" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="875" y="2210" class="module-tag" text-anchor="middle" fill="#4b5563">[ORDERS DB]</text>
+      <text x="875" y="2223.5" class="node-bold">Save Complete Order Record in Database</text>
+<text x="875" y="2242.5" class="node-bold">Customer, Address, Saree Items, Subtotal, COD Status</text>
+    </g>
+  
+    <line x1="875" y1="2263" x2="875" y2="2295" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="670" y="2295" width="410" height="48" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="2309.5" class="node-text">Generate Unique Order ID (#SS10XX)</text>
+<text x="875" y="2328.5" class="node-text">Assigned Sequentially to Placed Order</text>
+    </g>
+  
+    <line x1="875" y1="2343" x2="875" y2="2375" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <path d="M 660 2388 
+               A 215 13 0 0 1 1090 2388 
+               L 1090 2430 
+               A 215 13 0 0 1 660 2430 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 660 2430 A 215 13 0 0 0 1090 2430" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="875" cy="2388" rx="215" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="875" y="2390" class="module-tag" text-anchor="middle" fill="#4b5563">[INVENTORY DB]</text>
+      <text x="875" y="2403.5" class="node-bold">Deduct Saree Inventory &amp; Record Audit</text>
+<text x="875" y="2422.5" class="node-bold">Create StockMovement Log (SM-XXXX Reason: SALE)</text>
+    </g>
+  
+    <line x1="875" y1="2443" x2="875" y2="2475" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="665,2475 1105,2475 1085,2527 645,2527" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="875" y="2491.5" class="node-text">Display Order Confirmation Screen on Website</text>
+<text x="875" y="2510.5" class="node-text">Order Number, Final Total, Destination &amp; Status</text>
+    </g>
+  
+    <line x1="875" y1="2527" x2="875" y2="2560" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="635" y="2560" width="480" height="66" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="645" y="2575" class="module-tag">MODULE 6: WHATSAPP</text>
+      <text x="875" y="2574" class="node-text">Compile 11-Point WhatsApp Alert for Boutique Owner</text>
+<text x="875" y="2593" class="node-text">Target Owner WhatsApp Number: +91 9087637123</text>
+<text x="875" y="2612" class="node-text">(Order ID, Customer Info, Items, Prices, Total, COD, IST Time)</text>
+    </g>
+  
+    <line x1="875" y1="2626" x2="875" y2="2660" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="875,2660 1030,2705 875,2750 720,2705" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="875" y="2686" class="decision-text">Are Meta WhatsApp</text>
+<text x="875" y="2705" class="decision-text">Credentials Configured</text>
+<text x="875" y="2724" class="decision-text">in server/.env?</text>
+    </g>
+  
+    <path d="M 1030 2705 L 1105 2705 L 1105 2780" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="1040" y="2695" class="label-yes">Yes</text>
+  
+    <g class="flow-node">
+      <polygon points="985,2780 1245,2780 1225,2830 965,2830" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1105" y="2795.5" class="node-text">Transmit via Meta Cloud API</text>
+<text x="1105" y="2814.5" class="node-text">POST graph.facebook.com/v20.0</text>
+    </g>
+  
+    <line x1="1105" y1="2830" x2="1105" y2="2865" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="1105,2865 1225,2905 1105,2945 985,2905" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="1105" y="2895.5" class="decision-text">Delivered to</text>
+<text x="1105" y="2914.5" class="decision-text">Meta Gateway?</text>
+    </g>
+  
+    <path d="M 1105 2945 L 1105 3010" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="1115" y="2975" class="label-yes">Yes</text>
+  
+    <g class="flow-node">
+      <path d="M 985 3023 
+               A 120 13 0 0 1 1225 3023 
+               L 1225 3061 
+               A 120 13 0 0 1 985 3061 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 985 3061 A 120 13 0 0 0 1225 3061" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="1105" cy="3023" rx="120" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="1105" y="3025" class="module-tag" text-anchor="middle" fill="#4b5563">[NOTIF LOG]</text>
+      <text x="1105" y="3036.5" class="node-bold">Record Status in Database:</text>
+<text x="1105" y="3055.5" class="node-bold">DELIVERED_TO_GATEWAY</text>
+    </g>
+  
+    <path d="M 1225 2905 L 1255 2905 L 1255 3010" fill="none" stroke="#111827" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+    <text x="1235" y="2895" class="label-no">No</text>
+  
+    <g class="flow-node">
+      <path d="M 1235 3023 
+               A 75 13 0 0 1 1385 3023 
+               L 1385 3061 
+               A 75 13 0 0 1 1235 3061 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 1235 3061 A 75 13 0 0 0 1385 3061" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="1310" cy="3023" rx="75" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="1310" y="3025" class="module-tag" text-anchor="middle" fill="#4b5563">[NOTIF LOG]</text>
+      <text x="1310" y="3036.5" class="node-bold">Record Status:</text>
+<text x="1310" y="3055.5" class="node-bold">API_ERROR</text>
+    </g>
+  
+    <path d="M 720 2705 L 645 2705 L 645 2780" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="690" y="2695" class="label-no">No</text>
+  
+    <g class="flow-node">
+      <path d="M 525 2793 
+               A 120 13 0 0 1 765 2793 
+               L 765 2831 
+               A 120 13 0 0 1 525 2831 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 525 2831 A 120 13 0 0 0 765 2831" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="645" cy="2793" rx="120" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="645" y="2795" class="module-tag" text-anchor="middle" fill="#4b5563">[NOTIF LOG]</text>
+      <text x="645" y="2806.5" class="node-bold">Record Status: CONFIG_REQUIRED</text>
+<text x="645" y="2825.5" class="node-bold">Log Payload to Server Console</text>
+    </g>
+  
+    <line x1="645" y1="2844" x2="645" y2="2880" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="540,2880 770,2880 750,2936 520,2936" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="645" y="2889" class="node-text">Display Accurate Status on Screen</text>
+<text x="645" y="2908" class="node-text">+ Provide 1-Click Direct WhatsApp</text>
+<text x="645" y="2927" class="node-text">Link to Owner (+91 9087637123)</text>
+    </g>
+  
+    <line x1="645" y1="2936" x2="645" y2="2975" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="525" y="2975" width="240" height="48" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="645" y="2989.5" class="node-text">Preserve Saved Order in Database</text>
+<text x="645" y="3008.5" class="node-text">Allow Retry Without Data Loss</text>
+    </g>
+  
+    <path d="M 645 3023 L 645 3110 L 875 3110" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <path d="M 1105 3074 L 1105 3110 L 875 3110" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <path d="M 1310 3074 L 1310 3110 L 875 3110" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="735" y="3125" width="280" height="46" rx="23" ry="23" fill="#ffffff" stroke="#111827" stroke-width="2.2" filter="url(#card-shadow)" />
+      <text x="875" y="3140" class="node-bold">ORDER FULFILLED</text>
+      <text x="875" y="3158" class="node-subtext">Order Safely Saved in Database</text>
+    </g>
+  
+    <line x1="875" y1="3171" x2="875" y2="3230" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="102,550 462,550 442,604 82,604" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="110" y="565" class="module-tag">MODULE 7: SREE AI</text>
+      <text x="272" y="567.5" class="node-text">Customer Opens Sree AI Assistant</text>
+<text x="272" y="586.5" class="node-text">Floating Animated Widget on Screen</text>
+    </g>
+  
+    <line x1="272" y1="604" x2="272" y2="640" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="112,640 452,640 432,696 92,696" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="272" y="658.5" class="node-text">Enter Natural Language Shopping Question</text>
+<text x="272" y="677.5" class="node-text">e.g., "Green Banarasi", "Under ₹1500", "Cheapest"</text>
+    </g>
+  
+    <line x1="272" y1="696" x2="272" y2="730" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <path d="M 102 743 
+               A 170 13 0 0 1 442 743 
+               L 442 785 
+               A 170 13 0 0 1 102 785 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 102 785 A 170 13 0 0 0 442 785" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="272" cy="743" rx="170" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="272" y="745" class="module-tag" text-anchor="middle" fill="#4b5563">[MONGODB / JSON STORE]</text>
+      <text x="272" y="758.5" class="node-bold">Query Saree Catalogue Database</text>
+<text x="272" y="777.5" class="node-bold">Search Real Names, Colors, Prices &amp; Stock</text>
+    </g>
+  
+    <line x1="272" y1="798" x2="272" y2="835" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="92" y="835" width="360" height="54" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="272" y="852.5" class="node-text">Natural Language Query Processing</text>
+<text x="272" y="871.5" class="node-text">Connected Catalogue Engine / Gemini Multi-Turn</text>
+    </g>
+  
+    <line x1="272" y1="889" x2="272" y2="925" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="102,925 462,925 442,983 82,983" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="272" y="944.5" class="node-text">Display Matching Saree Product Cards</text>
+<text x="272" y="963.5" class="node-text">Real Photo, Price, Stock &amp; "Add to Cart" Button</text>
+    </g>
+  
+    <line x1="272" y1="983" x2="272" y2="1020" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="272,1020 407,1060 272,1100 137,1060" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="272" y="1050.5" class="decision-text">Customer Decides</text>
+<text x="272" y="1069.5" class="decision-text">to Purchase Saree?</text>
+    </g>
+  
+    <path d="M 407 1060 L 645 1060 L 645 1140 L 660 1140" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="427" y="1050" class="label-yes">Yes</text>
+  
+    <path d="M 137 1060 L 62 1060 L 62 668 L 92 668" fill="none" stroke="#111827" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+    <text x="97" y="1050" class="label-no">No</text>
+  
+    <g class="flow-node">
+      <polygon points="1478,550 1628,595 1478,640 1328,595" fill="#ffffff" stroke="#111827" stroke-width="2" filter="url(#card-shadow)" />
+      <text x="1478" y="585.5" class="decision-text">Select Traditional Service</text>
+<text x="1478" y="604.5" class="decision-text">Boutique Craftsmanship Options</text>
+    </g>
+  
+    <path d="M 1328 595 L 1383 595 L 1383 680" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="1318" y="585" class="label-branch">Blouse Stitching</text>
+  
+    <path d="M 1628 595 L 1573 595 L 1573 680" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    <text x="1573" y="585" class="label-branch">Aari Classes</text>
+  
+    <g class="flow-node">
+      <polygon points="1298,680 1463,680 1443,736 1278,736" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="1306" y="695" class="module-tag">BLOUSE SERVICE</text>
+      <text x="1370.5" y="698.5" class="node-text">Open Blouse Stitching</text>
+<text x="1370.5" y="717.5" class="node-text">Page (/blouse-stitching)</text>
+    </g>
+  
+    <line x1="1383" y1="736" x2="1383" y2="770" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="1298,770 1463,770 1443,844 1278,844" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1370.5" y="788" class="node-text">Enter Measurements</text>
+<text x="1370.5" y="807" class="node-text">in Inches (Bust, Waist,</text>
+<text x="1370.5" y="826" class="node-text">Length) &amp; Neck/Sleeve</text>
+    </g>
+  
+    <line x1="1383" y1="844" x2="1383" y2="875" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="1278" y="875" width="185" height="50" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1370.5" y="890.5" class="node-text">Submit Tailoring Enquiry</text>
+<text x="1370.5" y="909.5" class="node-text">POST /api/enquiries/blouse</text>
+    </g>
+  
+    <line x1="1383" y1="925" x2="1383" y2="955" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <path d="M 1278 968 
+               A 92.5 13 0 0 1 1463 968 
+               L 1463 1010 
+               A 92.5 13 0 0 1 1278 1010 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 1278 1010 A 92.5 13 0 0 0 1463 1010" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="1370.5" cy="968" rx="92.5" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="1370.5" y="970" class="module-tag" text-anchor="middle" fill="#4b5563">[ENQUIRIES DB]</text>
+      <text x="1370.5" y="983.5" class="node-bold">Generate BLS-XXXX ID</text>
+<text x="1370.5" y="1002.5" class="node-bold">&amp; Save to Enquiries DB</text>
+    </g>
+  
+    <line x1="1383" y1="1023" x2="1383" y2="1055" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="1298,1055 1463,1055 1443,1121 1278,1121" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1370.5" y="1069" class="node-text">Display Transparent</text>
+<text x="1370.5" y="1088" class="node-text">Tailor Quotation Notice</text>
+<text x="1370.5" y="1107" class="node-text">&amp; Confirmation Reference</text>
+    </g>
+  
+    <g class="flow-node">
+      <polygon points="1503,680 1668,680 1648,736 1483,736" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <text x="1511" y="695" class="module-tag">AARI WORK</text>
+      <text x="1575.5" y="698.5" class="node-text">Open Aari Work Portal</text>
+<text x="1575.5" y="717.5" class="node-text">Page (/aari-work-class)</text>
+    </g>
+  
+    <line x1="1573" y1="736" x2="1573" y2="770" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="1503,770 1668,770 1648,844 1483,844" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1575.5" y="788" class="node-text">Select Format: Online Live</text>
+<text x="1575.5" y="807" class="node-text">or Offline in Madurai &amp;</text>
+<text x="1575.5" y="826" class="node-text">Preferred Batch Timing</text>
+    </g>
+  
+    <line x1="1573" y1="844" x2="1573" y2="875" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="1483" y="875" width="185" height="50" rx="5" fill="#ffffff" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1575.5" y="890.5" class="node-text">Submit Registration</text>
+<text x="1575.5" y="909.5" class="node-text">POST /api/enquiries/aari</text>
+    </g>
+  
+    <line x1="1573" y1="925" x2="1573" y2="955" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <path d="M 1483 968 
+               A 92.5 13 0 0 1 1668 968 
+               L 1668 1010 
+               A 92.5 13 0 0 1 1483 1010 
+               Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      <path d="M 1483 1010 A 92.5 13 0 0 0 1668 1010" fill="none" stroke="#111827" stroke-width="1.8" />
+      <ellipse cx="1575.5" cy="968" rx="92.5" ry="13" fill="#e5e7eb" stroke="#111827" stroke-width="1.8" />
+      <text x="1575.5" y="970" class="module-tag" text-anchor="middle" fill="#4b5563">[ENQUIRIES DB]</text>
+      <text x="1575.5" y="983.5" class="node-bold">Generate AARI-XXXX ID</text>
+<text x="1575.5" y="1002.5" class="node-bold">&amp; Save to Enquiries DB</text>
+    </g>
+  
+    <line x1="1573" y1="1023" x2="1573" y2="1055" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <polygon points="1503,1055 1668,1055 1648,1121 1483,1121" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" filter="url(#card-shadow)" />
+      
+      <text x="1575.5" y="1069" class="node-text">Display Class Syllabus,</text>
+<text x="1575.5" y="1088" class="node-text">Materials Kit Info &amp;</text>
+<text x="1575.5" y="1107" class="node-text">Enrollment Notice</text>
+    </g>
+  
+    <path d="M 1383 1121 L 1383 1160 L 1478 1160" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <path d="M 1573 1121 L 1573 1160 L 1478 1160" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <line x1="1478" y1="1160" x2="1478" y2="1195" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="1368" y="1195" width="220" height="48" rx="24" ry="24" fill="#ffffff" stroke="#111827" stroke-width="2.2" filter="url(#card-shadow)" />
+      <text x="1478" y="1211" class="node-bold">ENQUIRY RECORDED</text>
+      <text x="1478" y="1229" class="node-subtext">Master Tailor / Instructor Follow-up</text>
+    </g>
+  
+    <path d="M 1478 1243 L 1478 3180 L 1045 3180 L 1045 3230 L 875 3230" fill="none" stroke="#111827" stroke-width="1.8"  marker-end="url(#arrow)" />
+    
+  
+    <g class="flow-node">
+      <rect x="775" y="3230" width="200" height="48" rx="24" ry="24" fill="#ffffff" stroke="#111827" stroke-width="2.2" filter="url(#card-shadow)" />
+      <text x="875" y="3246" class="node-bold">END</text>
+      <text x="875" y="3264" class="node-subtext">Session Terminated</text>
+    </g>
+  
+  <g id="legend">
+    <rect x="42" y="3300" width="1666" height="95" rx="6" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.2" />
+    <text x="60" y="3325" class="legend-title">STANDARD ACADEMIC FLOWCHART SYMBOL CONVENTIONS (ISO 5807)</text>
+    
+    <!-- Legend item 1: Oval -->
+    <rect x="60" y="3340" width="80" height="34" rx="17" ry="17" fill="#ffffff" stroke="#111827" stroke-width="1.8" />
+    <text x="100" y="3357" class="node-bold" font-size="11">Start / End</text>
+    <text x="155" y="3358" class="legend-desc">Terminator (Start / End of Workflow)</text>
+
+    <!-- Legend item 2: Process -->
+    <rect x="450" y="3340" width="80" height="34" rx="4" fill="#ffffff" stroke="#111827" stroke-width="1.8" />
+    <text x="490" y="3357" class="node-text" font-size="11">Process</text>
+    <text x="545" y="3358" class="legend-desc">Processing / Computational Operation</text>
+
+    <!-- Legend item 3: IO -->
+    <polygon points="860,3340 930,3340 915,3374 845,3374" fill="#fdfdfd" stroke="#111827" stroke-width="1.8" />
+    <text x="888" y="3357" class="node-text" font-size="11">Input/Output</text>
+    <text x="945" y="3358" class="legend-desc">User Input or Display Screen</text>
+
+    <!-- Legend item 4: Decision -->
+    <polygon points="1215,3340 1250,3357 1215,3374 1180,3357" fill="#ffffff" stroke="#111827" stroke-width="1.8" />
+    <text x="1215" y="3357" class="decision-text" font-size="10">Decision</text>
+    <text x="1265" y="3358" class="legend-desc">Conditional Branch (Yes / No)</text>
+
+    <!-- Legend item 5: Database -->
+    <path d="M 1520 3345 A 25 6 0 0 1 1570 3345 L 1570 3368 A 25 6 0 0 1 1520 3368 Z" fill="#f8f9fa" stroke="#111827" stroke-width="1.5" />
+    <ellipse cx="1545" cy="3345" rx="25" ry="6" fill="#e5e7eb" stroke="#111827" stroke-width="1.5" />
+    <text x="1580" y="3358" class="legend-desc">Database Operation</text>
+  </g>
+
+</svg>

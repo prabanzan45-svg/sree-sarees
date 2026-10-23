@@ -1,0 +1,196 @@
+[
+  {
+    "_id": "usr_admin_001",
+    "name": "Sree Sarees Owner",
+    "email": "owner@sreesarees.com",
+    "phone": "+91 98401 23456",
+    "password": "$2a$10$IlyzgEr245ygyKciLlJSp.jBmd/LGBBNbnHht.jmNW0LRajzch/KS",
+    "role": "ADMIN",
+    "createdAt": "2026-10-18T06:15:23.614Z"
+  },
+  {
+    "_id": "usr_cust_001",
+    "name": "Priyanka Devi",
+    "email": "customer@example.com",
+    "phone": "+91 98765 43210",
+    "password": "$2a$10$84I1BXeT7/0npCPEsb9LAu00FyIfTO9EjclCMPgx2Xxbt1w/YCCau",
+    "role": "CUSTOMER",
+    "createdAt": "2026-10-18T06:15:23.670Z"
+  },
+  {
+    "_id": "usr_gpamys9",
+    "name": "Priyanka Devi",
+    "email": "priya_1792325130938@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$6B4lh/8LB9m9pbA7uDRL8O6jjXtfsYXRg.tsEvFrppWe29yhS6qii",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-18T12:05:31.004Z"
+  },
+  {
+    "_id": "usr_kp4wgnk",
+    "name": "Priyanka Devi",
+    "email": "priya_1792325169073@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$/xpUXHo.BlIaWjO2Vldic.6p.FIMzoay0eNrW6k2Ujy5mdlW6JOQG",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-18T12:06:09.133Z"
+  },
+  {
+    "_id": "usr_gepu6jf",
+    "name": "Priyanka Devi",
+    "email": "priya_1792325219032@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$d96MW1OaIcGApbg65pF5fe8YkfM7uh0fuUBZfMcXTOV/LR3S0Y47q",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-18T12:06:59.097Z"
+  },
+  {
+    "_id": "usr_ilsdmmo",
+    "name": "Priyanka Devi",
+    "email": "priya_1792326936361@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$Hj092p5Shj6p8MYAN5MQMe/cietxjJje734ALl.HdtMuFGiGrzM.u",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms Residency, Anna Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-18T12:35:36.424Z"
+  },
+  {
+    "_id": "usr_6o73ga4",
+    "name": "Priyanka Devi",
+    "email": "priya_1792330232782@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$u5reQk2yvxfenTyZKCEx0ugvjZiOJYF8XIExsqsCbjQrjbn.ulGaO",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-18T13:30:32.900Z"
+  },
+  {
+    "_id": "usr_irwwwvc",
+    "name": "Priyanka Devi",
+    "email": "priya_1792422386686@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$5YawzxUCsmvF/EW6H4cnpePwFJlYrHQn2K20w3dzbMgd8hTkl6t.K",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-19T15:06:26.762Z"
+  },
+  {
+    "_id": "usr_clmj9y7",
+    "name": "Priyanka Devi",
+    "email": "priya_1792424215901@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$SrfEceExz6KqfjTPbRhIluI8AAd4Vpna5vtbJzUOJ0GEXODostg12",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-19T15:36:55.966Z"
+  },
+  {
+    "_id": "usr_4ybifat",
+    "name": "Priyanka Devi",
+    "email": "priya_1792425262617@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$NxSbKqA6BJVpsH4bJnTZuuwbv1NTLTLcyXkLfObEzzjRlr7PT0e3K",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-19T15:54:22.682Z"
+  },
+  {
+    "_id": "usr_hhvsp47",
+    "name": "Priyanka Devi",
+    "email": "priya_1792425299363@example.com",
+    "phone": "9876543210",
+    "password": "$2a$10$9GUcQ3fE6OkWaAzXa9CE9./CfkL2245TgXIwJals.eZ08X9XoLoFu",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "Flat 402, Royal Palms, South Masi Street",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-19T15:54:59.435Z"
+  },
+  {
+    "_id": "usr_2q0b8k5",
+    "name": "snehavalli",
+    "email": "priyadharshini4650@gmail.com",
+    "phone": "9789567555",
+    "password": "$2a$10$UMOXn9UTPhxYYILE.y1nMu6wNEye2ynS0WwdEGe9B700VPuler/AW",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "2,santhana murugan 1st street,opp to kabali amman temple,byekara,madurai",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625004"
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-19T15:56:08.465Z"
+  },
+  {
+    "_id": "usr_brldub2",
+    "name": "Academic Test Customer",
+    "email": "test_user_1792476575331@example.com",
+    "phone": "9840123456",
+    "password": "$2a$10$wtOXxfrzyyfXNsjMqXb8mOnZf0D2t0cuA5I89pw8jPDIkjXOae0y6",
+    "role": "CUSTOMER",
+    "deliveryAddress": {
+      "addressLine": "",
+      "city": "",
+      "state": "Tamil Nadu",
+      "pincode": ""
+    },
+    "whatsappConsent": true,
+    "createdAt": "2026-10-20T06:09:35.652Z"
+  }
+]

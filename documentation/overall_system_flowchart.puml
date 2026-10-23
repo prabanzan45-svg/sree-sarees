@@ -1,0 +1,132 @@
+@startuml
+skinparam Monochrome true
+skinparam DefaultFontName "Arial"
+skinparam DefaultFontSize 12
+skinparam ActivityBorderColor #000000
+skinparam ActivityBackgroundColor #FFFFFF
+skinparam ActivityDiamondBorderColor #000000
+skinparam ActivityDiamondBackgroundColor #FFFFFF
+skinparam ArrowColor #000000
+skinparam DatabaseBorderColor #000000
+skinparam DatabaseBackgroundColor #F8F9FA
+
+title OVERALL SYSTEM FLOWCHART – SREE SAREES WEBSITE
+
+start
+
+:Open Sree Sarees Website;
+:Display Home Page & Main Navigation;
+
+switch (Select User Activity)
+case ( 1. Saree Shopping )
+  :Display 4 Main Saree Collections:
+  * Cotton Sarees (10 Weaves)
+  * Silk Sarees (10 Weaves)
+  * Kalamkari Sarees (10 Weaves)
+  * Fancy Sarees (10 Weaves);
+  
+  :Customer Selects Saree Category;
+  :Query Saree Catalogue Database (MongoDB / JSON);
+  
+  repeat
+    :Display Available Sarees in Category;
+    if (Search or Filter Products?) then (Yes)
+      :Apply Filters: Fabric, Color, Price Slider, or Keywords;
+    else (No)
+    endif
+    :Select Saree to View Product Details;
+    :Display Product Specifications:
+    5.5m Saree + 0.8m Blouse Piece, Price & Photos;
+    :Click "Add to Cart";
+    :View Shopping Cart Drawer / Page;
+    :Update Quantity or Remove Saree (Optional);
+    :Click "Proceed to Checkout";
+  backward:Display Empty Bag Notice;
+  repeat while (Is Shopping Cart Empty?) is (Yes) not (No)
+
+  repeat
+    :Enter Customer Details (Name, 10-Digit Mobile, Email);
+    :Enter Customer Delivery Address (Street, City, State, Pincode);
+    :Select Payment Method (COD, Direct UPI QR, Online Gateway);
+    :Validate Form Input & Phone Format;
+  backward:Display Error Notice & Request Required Field Corrections;
+  repeat while (Are Order Details Valid?) is (No) not (Yes)
+
+  :Calculate Saree Subtotal, Free Delivery Threshold & Final Total;
+  
+  :Server Verification: Check Current Saree Prices & Boutique Stock;
+  if (Is Boutique Stock Available?) then (No)
+    :Display Insufficient Stock Notice;
+    stop
+  else (Yes)
+  endif
+
+  :Save Complete Order in Database (Orders Collection / JSON Store);
+  :Generate Unique Order ID (#SS10XX);
+  :Deduct Saree Inventory & Record StockMovement Audit Log;
+  :Display Order Confirmation Screen on Website;
+
+  :Compile 11-Point WhatsApp Alert Payload for Boutique Owner
+  (Order ID, Customer Info, Items, Prices, Delivery Address, COD Status, Timestamp)
+  Target Number: +91 9087637123;
+
+  if (Are Meta WhatsApp API Credentials Configured in server/.env?) then (Yes)
+    :Transmit Automated Alert via Meta WhatsApp Business Cloud API;
+    if (Was Message Delivered to Meta Gateway?) then (Yes)
+      :Record Status: DELIVERED_TO_GATEWAY in Database (Message ID Logged);
+    else (No)
+      :Record Status: API_ERROR in Database
+      (Preserve Saved Order Safely);
+    endif
+  else (No)
+    :Record Status: CONFIG_REQUIRED in Database
+    Log Formatted Message to Server Console
+    (Preserve Saved Order Safely);
+    :Display Accurate Status on Website Order Confirmation Screen
+    Provide 1-Click WhatsApp Web Direct Alert Link as Instant Fallback;
+    :Allow Direct Notification / Retry Without Losing Saved Order;
+  endif
+
+case ( 2. Sree AI Shopping Assistant )
+  :Customer Opens Sree AI Shopping Assistant Widget;
+  :Enter Natural Language Shopping Question
+  (Fabrics, Colors, Under ₹1500, Cheapest Saree, Care Tips);
+  :Query Live Saree Catalogue Database;
+  :Sree AI Natural Language Processing
+  (Intent Extraction & Catalogue Match / Gemini LLM Multi-Turn);
+  :Display Matching Saree Product Cards
+  (Real Photos, Accurate Prices, Stock Badges & Add to Cart);
+  if (Customer Decides to Purchase?) then (Yes)
+    :Click "Add to Cart";
+    :View Shopping Cart;
+  else (No)
+    :Return to Browsing or Continue Chat;
+  endif
+
+case ( 3. Traditional Services )
+  if (Select Service Type?) then (Blouse Stitching)
+    :Open Blouse Stitching Service Page (/blouse-stitching);
+    :Enter Customer Measurements in Inches
+    (Bust, Waist, Shoulder, Blouse Length, Sleeve Length, Neck Depths);
+    :Select Design Customizations
+    (Neckline, Sleeve Style, Back Pattern, Cotton Lining, Padded Cups);
+    :Submit Tailoring Enquiry (POST /api/enquiries/blouse);
+    :Generate BLS-XXXX Tracking ID & Save in Enquiries Database;
+    :Display Transparent Quotation Notice
+    (Master tailor contacts customer with personalized pricing);
+  else (Aari Work Classes)
+    :Open Aari Work Class Portal (/aari-work-class);
+    :Select Learning Format:
+    * Online Live Sessions (Interactive Video + Delivered Starter Kit)
+    * Offline Classes in and around Madurai, Tamil Nadu;
+    :Select Preferred Batch Timings & Experience Level;
+    :Submit Class Registration Enquiry (POST /api/enquiries/aari);
+    :Generate AARI-XXXX Registration ID & Save in Enquiries Database;
+    :Display Course Overview, Syllabus & Coordinator Contact Notice;
+  endif
+
+endswitch
+
+stop
+
+@enduml

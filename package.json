@@ -1,0 +1,12 @@
+{
+  "name": "sree-sarees-root",
+  "version": "1.0.0",
+  "description": "Sree Sarees — An E-Commerce and Smart Inventory Management System",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && npm test",
+    "inventory": "cd server && npm run inventory"
+  }
+}

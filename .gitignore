@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.backup
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+server/.env
+
+# Production Build Artifacts
+dist/
+build/
+client/dist/
+
+# Cache directories
+.vite/
+client/.vite/
+.eslintcache
+.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sw?

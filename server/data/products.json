@@ -1,0 +1,1087 @@
+[
+  {
+    "_id": "prod_001",
+    "productId": "SS-COT-001",
+    "name": "Chettinad Cotton Temple Border Saree",
+    "description": "Authentic Chettinad handloom cotton saree woven with traditional temple korvai borders and rich contrast stripes. Ideal for daily pooja and elegant office wear.",
+    "price": 899,
+    "discountPrice": 749,
+    "isOffer": true,
+    "category": "Cotton Sarees",
+    "fabric": "Chettinad Pure Cotton",
+    "colour": "Maroon & Mustard",
+    "pattern": "Temple Korvai Border with Contrast Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 15,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/cotton-1.jpg"
+    ],
+    "features": [
+      "100% Breathable Cotton",
+      "Authentic Handloom Weave",
+      "Shrink Resistant Finish"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T15:31:14.772Z",
+    "updatedAt": "2026-10-19T15:54:59.442Z"
+  },
+  {
+    "_id": "prod_002",
+    "productId": "SS-COT-002",
+    "name": "Mangalagiri Handloom Cotton Saree",
+    "description": "Fine count pure Mangalagiri cotton drape featuring an intricate Nizam zari border in gold thread. Soft, lightweight, and exceptionally breathable for summer celebrations.",
+    "price": 1199,
+    "discountPrice": 999,
+    "isOffer": true,
+    "category": "Cotton Sarees",
+    "fabric": "Mangalagiri Pure Cotton",
+    "colour": "Emerald Green",
+    "pattern": "Nizam Gold Zari Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 14,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/cotton-2.jpg"
+    ],
+    "features": [
+      "Nizam Gold Border",
+      "Lightweight Drape",
+      "Handwoven Texture"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T14:31:14.774Z"
+  },
+  {
+    "_id": "prod_003",
+    "productId": "SS-COT-003",
+    "name": "Mulmul Cotton Hand-Block Print Saree",
+    "description": "Feather-light Mulmul cotton saree embellished with timeless floral jaal hand-block printing in natural indigo and terracotta dyes.",
+    "price": 699,
+    "discountPrice": 599,
+    "isOffer": true,
+    "category": "Cotton Sarees",
+    "fabric": "Mulmul Fine Cotton",
+    "colour": "Indigo Blue",
+    "pattern": "Floral Jaal Hand-Block Print",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 21,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/cotton-3.jpg"
+    ],
+    "features": [
+      "Feather-light Mulmul",
+      "Handblock Art",
+      "All-Day Comfort"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T13:31:14.774Z",
+    "updatedAt": "2026-10-19T15:57:21.659Z"
+  },
+  {
+    "_id": "prod_004",
+    "productId": "SS-COT-004",
+    "name": "Sunny Yellow Mulmul Daily Wear Cotton Saree",
+    "description": "Bright and cheerful everyday cotton saree crafted from pure Mulmul handloom with minimalist border detailing. Our most affordable everyday drape.",
+    "price": 699,
+    "discountPrice": 499,
+    "isOffer": true,
+    "category": "Cotton Sarees",
+    "fabric": "Pure Mulmul Cotton",
+    "colour": "Sunny Yellow",
+    "pattern": "Minimalist Contrast Thread Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 24,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/cotton-4.jpg"
+    ],
+    "features": [
+      "Lowest Price in Collection",
+      "Pure Cotton Comfort",
+      "Easy Home Wash"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T12:31:14.774Z",
+    "updatedAt": "2026-10-19T15:57:21.654Z"
+  },
+  {
+    "_id": "prod_005",
+    "productId": "SS-COT-005",
+    "name": "Chanderi Cotton Silk Pastel Saree",
+    "description": "Delicate Chanderi cotton-silk blend saree with subtle golden zari buttas and a sheer, regal drape suitable for festive family functions.",
+    "price": 1299,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Cotton Sarees",
+    "fabric": "Chanderi Cotton Silk",
+    "colour": "Pastel Peach",
+    "pattern": "Small Zari Buttas with Gold Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 12,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/cotton-5.jpg"
+    ],
+    "features": [
+      "Subtle Sheen",
+      "Artisan Zari Buttas",
+      "Festive Drape"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T11:31:14.774Z"
+  },
+  {
+    "_id": "prod_006",
+    "productId": "SS-COT-006",
+    "name": "Chettinad Sungudi Handloom Cotton Saree",
+    "description": "Traditional Madurai & Chettinad region Sungudi cotton saree featuring authentic tie-dye dot circular motifs and wide woven temple borders.",
+    "price": 799,
+    "discountPrice": 699,
+    "isOffer": false,
+    "category": "Cotton Sarees",
+    "fabric": "Sungudi Pure Cotton",
+    "colour": "Black & Maroon",
+    "pattern": "Traditional Sungudi Dots & Temple Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 16,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/cotton-6.jpg"
+    ],
+    "features": [
+      "Sungudi Tie-Dye Technique",
+      "Heritage Madurai Craft",
+      "Contrast Pallu"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T10:31:14.774Z"
+  },
+  {
+    "_id": "prod_007",
+    "productId": "SS-COT-007",
+    "name": "Coimbatore Soft Cotton Saree",
+    "description": "Woven with high-twist combed cotton yarns in Coimbatore weaving clusters. Soft, smooth, and enriched with fine ganga-jamuna dual-color borders.",
+    "price": 849,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Cotton Sarees",
+    "fabric": "Coimbatore Combed Cotton",
+    "colour": "Royal Navy Blue",
+    "pattern": "Ganga-Jamuna Contrast Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 15,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/cotton-7.jpg"
+    ],
+    "features": [
+      "Combed Cotton Softness",
+      "Dual Edge Border",
+      "Stays Crisp All Day"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T09:31:14.774Z"
+  },
+  {
+    "_id": "prod_008",
+    "productId": "SS-COT-008",
+    "name": "Chanderi Cotton Handloom Floral Saree",
+    "description": "Elegantly handwoven Chanderi cotton drape with traditional peacock and floral vine motifs along the pallu and antique gold zari edging.",
+    "price": 1149,
+    "discountPrice": 949,
+    "isOffer": true,
+    "category": "Cotton Sarees",
+    "fabric": "Chanderi Cotton Handloom",
+    "colour": "Mustard Gold",
+    "pattern": "Peacock Motif Pallu with Zari Edging",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 11,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/cotton-8.jpg"
+    ],
+    "features": [
+      "Handcrafted Motifs",
+      "Graceful Fall",
+      "Festive Appeal"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T08:31:14.774Z"
+  },
+  {
+    "_id": "prod_009",
+    "productId": "SS-COT-009",
+    "name": "Mangalagiri Pattu-Border Cotton Saree",
+    "description": "Classic Mangalagiri handwoven cotton saree with rich solid body and contrast silk-finish zari border. Perfect for cultural events and temple visits.",
+    "price": 999,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Cotton Sarees",
+    "fabric": "Mangalagiri Handloom Cotton",
+    "colour": "Wine Plum",
+    "pattern": "Zari Border with Solid Body",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 14,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/cotton-9.jpg"
+    ],
+    "features": [
+      "Pure Mangalagiri Weave",
+      "Rich Deep Tone",
+      "Silk Mark Verified"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T07:31:14.774Z"
+  },
+  {
+    "_id": "prod_010",
+    "productId": "SS-COT-010",
+    "name": "Chettinad Checks Handloom Saree",
+    "description": "Iconic Chettinad check pattern handloom cotton saree with vibrant contrast borders and traditional rudraksh thread motifs.",
+    "price": 799,
+    "discountPrice": 649,
+    "isOffer": true,
+    "category": "Cotton Sarees",
+    "fabric": "Chettinad Pure Cotton",
+    "colour": "Rust Orange & Brown",
+    "pattern": "Traditional Plaid Checks with Rudraksh Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 20,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/cotton-10.jpg"
+    ],
+    "features": [
+      "Traditional Checks",
+      "Rudraksh Border Weave",
+      "Authentic Tamil Heritage"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T06:31:14.774Z"
+  },
+  {
+    "_id": "prod_011",
+    "productId": "SS-SLK-001",
+    "name": "Kanjivaram Soft Silk Brocade Saree",
+    "description": "Opulent Kanjivaram style soft silk saree in deep crimson red, woven with intricate floral jaal in gold zari and a grand brocade pallu.",
+    "price": 2499,
+    "discountPrice": 2199,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Kanjivaram Style Soft Silk",
+    "colour": "Crimson Red",
+    "pattern": "All-Over Gold Zari Floral Jaal with Brocade Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 9,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/silk-1.jpg"
+    ],
+    "features": [
+      "Rich Gold Zari Weave",
+      "Lustrous Soft Silk",
+      "Grand Festive Pallu"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T05:31:14.774Z",
+    "updatedAt": "2026-10-20T05:31:51.159Z"
+  },
+  {
+    "_id": "prod_012",
+    "productId": "SS-SLK-002",
+    "name": "Mysore Crepe Silk Gold Border Saree",
+    "description": "Pure Mysore crepe silk saree known for its buttery soft drape and lustrous finish, enhanced with a solid antique gold zari border and rich pallu.",
+    "price": 2199,
+    "discountPrice": 1899,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Mysore Crepe Silk",
+    "colour": "Royal Sapphire Blue",
+    "pattern": "Solid Antique Gold Zari Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 8,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/silk-2.jpg"
+    ],
+    "features": [
+      "Pure Crepe Softness",
+      "Antique Gold Accent",
+      "Unmatched Elegance"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T04:31:14.774Z"
+  },
+  {
+    "_id": "prod_013",
+    "productId": "SS-SLK-003",
+    "name": "Soft Art Silk Peacock Butta Saree",
+    "description": "Vibrant Rani pink soft art silk saree decorated with delicate circular peacock zari buttas across the body and a regal brocade pallu.",
+    "price": 1799,
+    "discountPrice": 1499,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Pure Soft Art Silk",
+    "colour": "Rani Pink",
+    "pattern": "Peacock Zari Buttas with Brocade Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 15,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/silk-3.jpg"
+    ],
+    "features": [
+      "Peacock Zari Motifs",
+      "Silky Sheen",
+      "Ideal for Receptions"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T03:31:14.774Z"
+  },
+  {
+    "_id": "prod_014",
+    "productId": "SS-SLK-004",
+    "name": "Bottle Green Ceremonial Silk Saree",
+    "description": "Traditional auspicious bottle green silk saree with contrasting crimson border, woven with temple gopuram motifs and rich metallic zari.",
+    "price": 2299,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Silk Sarees",
+    "fabric": "Festive Soft Silk",
+    "colour": "Bottle Green & Crimson",
+    "pattern": "Temple Gopuram Border with Zari Stripes",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 12,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/silk-4.jpg"
+    ],
+    "features": [
+      "Auspicious Contrast",
+      "Temple Motifs",
+      "Rich Pallu"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T02:31:14.774Z"
+  },
+  {
+    "_id": "prod_015",
+    "productId": "SS-SLK-005",
+    "name": "Mustard Gold Wedding Soft Silk Saree",
+    "description": "Haldi and wedding special mustard gold soft silk saree featuring a broad maroon korvai border and embossed diamond floral weaving.",
+    "price": 2399,
+    "discountPrice": 1999,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Soft Silk",
+    "colour": "Mustard Gold",
+    "pattern": "Embossed Diamond Floral Weaving",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 9,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/silk-5.jpg"
+    ],
+    "features": [
+      "Haldi Wedding Special",
+      "Broad Korvai Border",
+      "Embossed Weave"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T01:31:14.774Z"
+  },
+  {
+    "_id": "prod_016",
+    "productId": "SS-SLK-006",
+    "name": "Teal Blue Mysore Silk Saree",
+    "description": "Contemporary teal blue Mysore silk drape featuring subtle golden thread zari pinstripes and a minimalist grand border.",
+    "price": 1899,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Silk Sarees",
+    "fabric": "Mysore Silk",
+    "colour": "Teal Blue",
+    "pattern": "Golden Thread Pinstripes with Zari Edge",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 14,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/silk-6.jpg"
+    ],
+    "features": [
+      "Contemporary Hue",
+      "Refined Sheen",
+      "Featherlight Silk"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-19T00:31:14.774Z"
+  },
+  {
+    "_id": "prod_017",
+    "productId": "SS-SLK-007",
+    "name": "Wine Purple Kanjivaram Style Brocade Saree",
+    "description": "Deep royal wine purple soft silk saree handwoven with dual silver and gold zari kadwa jaal motifs. A showstopper for evening receptions.",
+    "price": 2699,
+    "discountPrice": 2399,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Kanjivaram Style Soft Silk",
+    "colour": "Wine Purple",
+    "pattern": "Silver & Gold Dual Zari Kadwa Jaal",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 7,
+    "lowStockThreshold": 2,
+    "images": [
+      "/images/sarees/silk-7.jpg"
+    ],
+    "features": [
+      "Dual Tone Metallic Zari",
+      "Rich Royal Palette",
+      "Grand Party Drape"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T23:31:14.774Z"
+  },
+  {
+    "_id": "prod_018",
+    "productId": "SS-SLK-008",
+    "name": "Rose Coral Art Silk Reception Saree",
+    "description": "Elegant rose coral art silk saree with floral vine embroidery along the borders and a shimmering zari weave that catches the light beautifully.",
+    "price": 1699,
+    "discountPrice": 1399,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Art Silk",
+    "colour": "Rose Coral",
+    "pattern": "Floral Vine Zari Border with Textured Body",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 16,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/silk-8.jpg"
+    ],
+    "features": [
+      "Pastel Rose Tone",
+      "Lightweight Art Silk",
+      "Comfortable Fit"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T22:31:14.774Z"
+  },
+  {
+    "_id": "prod_019",
+    "productId": "SS-SLK-009",
+    "name": "Emerald Green & Ruby Contrast Soft Silk Saree",
+    "description": "Classic South Indian traditional emerald green soft silk saree with ruby red contrast pallu and heavy gold zari border.",
+    "price": 2499,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Silk Sarees",
+    "fabric": "Soft Silk",
+    "colour": "Emerald Green & Ruby Red",
+    "pattern": "Traditional Contrast Border with Zari Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 11,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/silk-9.jpg"
+    ],
+    "features": [
+      "Timeless Contrast",
+      "Pure Gold Zari",
+      "Ceremonial Favorite"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T21:31:14.774Z"
+  },
+  {
+    "_id": "prod_020",
+    "productId": "SS-SLK-010",
+    "name": "Midnight Black Banarasi Silk Brocade Saree",
+    "description": "Striking midnight black Banarasi brocade silk saree with rich antique gold zari booti all over and an ornate meenakari pallu.",
+    "price": 2799,
+    "discountPrice": 2499,
+    "isOffer": true,
+    "category": "Silk Sarees",
+    "fabric": "Banarasi Brocade Silk",
+    "colour": "Midnight Black",
+    "pattern": "Antique Gold Zari Booti with Meenakari Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 6,
+    "lowStockThreshold": 2,
+    "images": [
+      "/images/sarees/silk-10.jpg"
+    ],
+    "features": [
+      "Opulent Black & Gold",
+      "Meenakari Accent",
+      "Collector Weave"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T20:31:14.774Z"
+  },
+  {
+    "_id": "prod_021",
+    "productId": "SS-KLM-001",
+    "name": "Pen Kalamkari Dancing Peacock Silk Saree",
+    "description": "Handcrafted pen Kalamkari saree in natural beige and indigo dyes depicting majestic dancing peacocks and blooming lotus vines.",
+    "price": 1899,
+    "discountPrice": 1599,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Kalamkari Handloom Silk Blend",
+    "colour": "Natural Beige & Indigo",
+    "pattern": "Pen Kalamkari Dancing Peacock & Lotus Vine Artwork",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 10,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/kalamkari-1.jpg"
+    ],
+    "features": [
+      "Authentic Pen Kalamkari",
+      "Vegetable Dye Colors",
+      "Hand-Painted Pallu"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T19:31:14.774Z"
+  },
+  {
+    "_id": "prod_022",
+    "productId": "SS-KLM-002",
+    "name": "Srikalahasti Tree of Life Kalamkari Saree",
+    "description": "Heritage Srikalahasti style Kalamkari saree illustrating the sacred Tree of Life with birds, flowering branches, and temple borders.",
+    "price": 1999,
+    "discountPrice": 1699,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Pure Cotton Kalamkari",
+    "colour": "Terracotta & Ochre",
+    "pattern": "Tree of Life with Temple Borders",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 9,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/kalamkari-2.jpg"
+    ],
+    "features": [
+      "Srikalahasti Technique",
+      "Sacred Motifs",
+      "Natural Earth Dyes"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T18:31:14.774Z"
+  },
+  {
+    "_id": "prod_023",
+    "productId": "SS-KLM-003",
+    "name": "Floral Vine Kalamkari Silk Blend Saree",
+    "description": "Intricately block-printed Kalamkari silk-blend saree featuring delicate creepers, songbirds, and floral vines in an off-white background.",
+    "price": 1499,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Kalamkari Sarees",
+    "fabric": "Silk-Cotton Kalamkari Blend",
+    "colour": "Off-White & Multicolour",
+    "pattern": "Floral Creepers with Songbird Motifs",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 14,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/kalamkari-3.jpg"
+    ],
+    "features": [
+      "Silk Sheen Texture",
+      "Detailed Motifs",
+      "All-Season Drape"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T17:31:14.774Z"
+  },
+  {
+    "_id": "prod_024",
+    "productId": "SS-KLM-004",
+    "name": "Machilipatnam Block Kalamkari Saree",
+    "description": "Machilipatnam block-printed Kalamkari saree featuring hand-carved wooden block temple chariot patterns on deep rustic maroon handloom fabric.",
+    "price": 1299,
+    "discountPrice": 1099,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Pure Handloom Cotton",
+    "colour": "Deep Maroon & Black",
+    "pattern": "Hand-Carved Wooden Block Chariot & Vine Pattern",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 16,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/kalamkari-4.jpg"
+    ],
+    "features": [
+      "Machilipatnam Block Print",
+      "Pure Handloom Cotton",
+      "Resist Dyeing"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T16:31:14.774Z"
+  },
+  {
+    "_id": "prod_025",
+    "productId": "SS-KLM-005",
+    "name": "Mythological Figures Kalamkari Heritage Saree",
+    "description": "Artisanal Kalamkari drape illustrating mythological figures and temple dancers across the body with rich contrast borders.",
+    "price": 1799,
+    "discountPrice": 1499,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Handloom Cotton",
+    "colour": "Mustard Yellow & Olive",
+    "pattern": "Mythological Figures & Temple Dancers",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 8,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/kalamkari-5.jpg"
+    ],
+    "features": [
+      "Intricate Artisan Figures",
+      "Temple Heritage",
+      "Natural Organic Dyes"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T15:31:14.774Z"
+  },
+  {
+    "_id": "prod_026",
+    "productId": "SS-KLM-006",
+    "name": "Lotus Pond Kalamkari Tussar Blend Saree",
+    "description": "Natural cream Tussar blend saree hand-painted in traditional Kalamkari style with blossoming lotus ponds, fish, and swan motifs.",
+    "price": 2199,
+    "discountPrice": 1899,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Tussar Silk Blend",
+    "colour": "Natural Cream & Teal",
+    "pattern": "Lotus Pond & Swan Kalamkari Artwork",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 7,
+    "lowStockThreshold": 2,
+    "images": [
+      "/images/sarees/kalamkari-6.jpg"
+    ],
+    "features": [
+      "Textured Tussar Feel",
+      "Swan & Lotus Motifs",
+      "Exclusive Artisan Work"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T14:31:14.774Z"
+  },
+  {
+    "_id": "prod_027",
+    "productId": "SS-KLM-007",
+    "name": "Forest Green Kalamkari Floral Jaal Saree",
+    "description": "Vibrant forest green Kalamkari saree printed with dense traditional floral jaal and antique gold printed borders.",
+    "price": 1399,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Kalamkari Sarees",
+    "fabric": "Cotton Kalamkari Handloom",
+    "colour": "Forest Green",
+    "pattern": "Dense Floral Jaal with Traditional Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 15,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/kalamkari-7.jpg"
+    ],
+    "features": [
+      "Deep Forest Green",
+      "Hand-Block Printed",
+      "Comfortable Fall"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T13:31:14.774Z"
+  },
+  {
+    "_id": "prod_028",
+    "productId": "SS-KLM-008",
+    "name": "Ruby Red Traditional Kalamkari Saree",
+    "description": "Rich ruby red handloom saree adorned with black outline Kalamkari paisleys and intricate border art inspired by South Indian temple murals.",
+    "price": 1599,
+    "discountPrice": 1299,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Pure Cotton Handloom",
+    "colour": "Ruby Red",
+    "pattern": "Traditional Paisleys & Temple Mural Borders",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 12,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/kalamkari-8.jpg"
+    ],
+    "features": [
+      "Temple Mural Style",
+      "Rich Ruby Tone",
+      "Fast Color Dyeing"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T12:31:14.774Z"
+  },
+  {
+    "_id": "prod_029",
+    "productId": "SS-KLM-009",
+    "name": "Teal Blue Bird & Leaf Kalamkari Saree",
+    "description": "Soothing teal blue handloom cotton saree decorated with artistic Kalamkari parrots, songbirds, and leafy branches.",
+    "price": 1199,
+    "discountPrice": null,
+    "isOffer": false,
+    "category": "Kalamkari Sarees",
+    "fabric": "Soft Cotton",
+    "colour": "Teal Blue & Ochre",
+    "pattern": "Kalamkari Parrots & Leafy Branches",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 18,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/kalamkari-9.jpg"
+    ],
+    "features": [
+      "Artistic Parrot Motifs",
+      "Soft Breathable Fabric",
+      "Everyday Elegance"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T11:31:14.774Z"
+  },
+  {
+    "_id": "prod_030",
+    "productId": "SS-KLM-010",
+    "name": "Epic Narrative Srikalahasti Kalamkari Saree",
+    "description": "Masterpiece Kalamkari saree in earthy brown and beige depicting narrative epic panels inspired by ancient epics with detailed border work.",
+    "price": 2199,
+    "discountPrice": 1849,
+    "isOffer": true,
+    "category": "Kalamkari Sarees",
+    "fabric": "Handloom Cotton-Silk",
+    "colour": "Earthy Brown & Beige",
+    "pattern": "Detailed Narrative Epic Panels with Multi-Layered Borders",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 6,
+    "lowStockThreshold": 2,
+    "images": [
+      "/images/sarees/kalamkari-10.jpg"
+    ],
+    "features": [
+      "Narrative Panel Art",
+      "Collector Item",
+      "Natural Vegetable Dyes"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T10:31:14.774Z"
+  },
+  {
+    "_id": "prod_031",
+    "productId": "SS-FNC-001",
+    "name": "Emerald Green Brocade Fancy Organza Saree",
+    "description": "Breathtaking sheer designer organza saree in rich emerald green with all-over floral brocade weave, delicate zari selvedge, and scalloped embroidery borders. Perfect for wedding receptions and evening soirées.",
+    "price": 1699,
+    "discountPrice": 1399,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Designer Brocade Organza",
+    "colour": "Emerald Green & Gold",
+    "pattern": "Floral Brocade Motifs with Scalloped Zari Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching brocade blouse piece included",
+    "stockQuantity": 14,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/fancy-1.jpg"
+    ],
+    "features": [
+      "Feather-Light Sheer Drape",
+      "Intricate Scalloped Edge",
+      "Contemporary Party Wear"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T09:31:14.774Z"
+  },
+  {
+    "_id": "prod_032",
+    "productId": "SS-FNC-002",
+    "name": "Chilly Red Bridal Tissue Silk Shimmer Saree",
+    "description": "Glamorous chilly red tissue silk saree woven with fine metallic gold and silver zari threads, creating a magnificent dual-tone shimmer that catches the light from every angle.",
+    "price": 2299,
+    "discountPrice": 1899,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Metallic Shimmer Tissue Silk",
+    "colour": "Chilly Red & Silver Gold",
+    "pattern": "Two-Tone Dual Zari Weave with Embellished Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching tissue blouse piece included",
+    "stockQuantity": 10,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/fancy-2.jpg"
+    ],
+    "features": [
+      "Dual Tone Metallic Glow",
+      "Grand Festive Lustre",
+      "Rich Brocade Pallu"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T08:31:14.774Z"
+  },
+  {
+    "_id": "prod_033",
+    "productId": "SS-FNC-003",
+    "name": "Jaipur Heritage Bandhej Georgette Saree",
+    "description": "Vibrant royal blue and mustard georgette saree featuring authentic handcrafted Bandhej tie-and-dye patterns, accentuated with a classic gold Gota Patti border.",
+    "price": 1299,
+    "discountPrice": 999,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Pure Georgette Bandhej",
+    "colour": "Royal Blue & Mustard",
+    "pattern": "Traditional Hand-Tied Bandhani Dots with Gota Patti Lace",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 16,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/fancy-3.jpg"
+    ],
+    "features": [
+      "Authentic Tie-and-Dye Craft",
+      "Lightweight Flowy Drape",
+      "Festive Gota Border"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T07:31:14.774Z"
+  },
+  {
+    "_id": "prod_034",
+    "productId": "SS-FNC-004",
+    "name": "Gujarat Bandhani Festive Fancy Saree",
+    "description": "Exuberant two-tone marigold orange and rani pink Bandhani saree with traditional circular speckle motifs and a sleek golden zari border. Easy to drape and comfortable all day.",
+    "price": 1199,
+    "discountPrice": 899,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Art Silk Bandhani",
+    "colour": "Marigold Orange & Rani Pink",
+    "pattern": "Traditional Kutch Bandhani with Golden Piping",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 18,
+    "lowStockThreshold": 5,
+    "images": [
+      "/images/sarees/fancy-4.jpg"
+    ],
+    "features": [
+      "High-Contrast Festive Colours",
+      "Wrinkle-Free Texture",
+      "Traditional Indian Motifs"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T06:31:14.774Z"
+  },
+  {
+    "_id": "prod_035",
+    "productId": "SS-FNC-005",
+    "name": "Royal Magenta All-Over Paithani Style Fancy Saree",
+    "description": "Opulent magenta designer saree inspired by traditional Paithani weaving, featuring all-over floral buttis and an elaborate antique gold zari border with muniya parrot motifs.",
+    "price": 1899,
+    "discountPrice": 1549,
+    "isOffer": false,
+    "category": "Fancy Sarees",
+    "fabric": "Paithani Art Silk",
+    "colour": "Royal Magenta & Antique Gold",
+    "pattern": "All-Over Buttish Floral Jaal with Muniya Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 11,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/fancy-5.jpg"
+    ],
+    "features": [
+      "All-Over Zari Buttash Work",
+      "Rich Paithani Border",
+      "Silky Smooth Texture"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T05:31:14.774Z",
+    "updatedAt": "2026-10-23T16:25:42.045Z"
+  },
+  {
+    "_id": "prod_036",
+    "productId": "SS-FNC-006",
+    "name": "Parrot & Peacock Border Designer Party Saree",
+    "description": "Enchanting peacock teal and purple designer party saree boasting richly enamelled dual peacock motifs along the border and a glistening contrast pallu.",
+    "price": 1799,
+    "discountPrice": 1449,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Soft Litchi Silk & Georgette",
+    "colour": "Peacock Teal & Purple",
+    "pattern": "Enamelled Peacock Motifs on Broad Zari Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 11,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/fancy-6.jpg"
+    ],
+    "features": [
+      "Peacock Enamel Motifs",
+      "Rich Contrast Combination",
+      "Designer Pallu"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T04:31:14.774Z"
+  },
+  {
+    "_id": "prod_037",
+    "productId": "SS-FNC-007",
+    "name": "Rajasthan Royal Heritage Leheriya Fancy Saree",
+    "description": "Timeless multi-colour pastel Leheriya saree capturing the breezy elegance of Rajasthan royal courtyards. Crafted from sheer airy fabric with a delicate golden gota lace border.",
+    "price": 1399,
+    "discountPrice": 1099,
+    "isOffer": false,
+    "category": "Fancy Sarees",
+    "fabric": "Sheer Kota Doria & Georgette",
+    "colour": "Multi-Colour Pastel Sunset",
+    "pattern": "Diagonal Leheriya Waves with Delicate Zari Border",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 15,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/fancy-7.jpg"
+    ],
+    "features": [
+      "Graceful Wave Patterns",
+      "Ultra-Lightweight Comfort",
+      "Festive Celebration Wear"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T03:31:14.774Z"
+  },
+  {
+    "_id": "prod_038",
+    "productId": "SS-FNC-008",
+    "name": "Varanasi Hand-Block Designer Brocade Saree",
+    "description": "Stately midnight navy blue satin brocade saree featuring intricate gold and copper zari paisley medallions, reminiscent of royal Varanasi heritage attire.",
+    "price": 2199,
+    "discountPrice": 1799,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Satin Brocade Silk",
+    "colour": "Midnight Navy & Antique Copper Zari",
+    "pattern": "Hand-Block Inspired Paisley Motifs with Rich Pallu",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching brocade blouse piece included",
+    "stockQuantity": 9,
+    "lowStockThreshold": 3,
+    "images": [
+      "/images/sarees/fancy-8.jpg"
+    ],
+    "features": [
+      "Heavy Brocade Weave",
+      "Dual Metallic Threading",
+      "Regal Evening Drape"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T02:31:14.774Z"
+  },
+  {
+    "_id": "prod_039",
+    "productId": "SS-FNC-009",
+    "name": "Opulent Gold Zari Grand Pallu Fancy Saree",
+    "description": "Showstopping champagne gold designer tissue saree with an exquisite heavy zari pallu and detailed floral vines. Designed for high-profile weddings and gala evenings.",
+    "price": 2499,
+    "discountPrice": 1999,
+    "isOffer": false,
+    "category": "Fancy Sarees",
+    "fabric": "Banarasi Fancy Tissue",
+    "colour": "Champagne Gold & Coral Pink",
+    "pattern": "Dense Floral Jaal Pallu with Contrast Selvedge",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 8,
+    "lowStockThreshold": 2,
+    "images": [
+      "/images/sarees/fancy-9.jpg"
+    ],
+    "features": [
+      "Full Metallic Gold Finish",
+      "Extravagant Grand Pallu",
+      "Celebrity Designer Look"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T01:31:14.774Z"
+  },
+  {
+    "_id": "prod_040",
+    "productId": "SS-FNC-010",
+    "name": "Regal Red & Gold Embroidered Designer Saree",
+    "description": "Timeless crimson red designer saree embellished with intricate gold zari cutwork border and delicate scattered buttis, offering a luxurious bridal and reception drape.",
+    "price": 1999,
+    "discountPrice": 1599,
+    "isOffer": true,
+    "category": "Fancy Sarees",
+    "fabric": "Shimmer Net & Satin Georgette",
+    "colour": "Crimson Red & Antique Gold",
+    "pattern": "Cutwork Zari Lace Border with Stone Embellishments",
+    "sareeLength": "5.5 meters",
+    "blouseDetails": "0.8 meter unstitched matching blouse piece included",
+    "stockQuantity": 13,
+    "lowStockThreshold": 4,
+    "images": [
+      "/images/sarees/fancy-10.jpg"
+    ],
+    "features": [
+      "Rich Cutwork Lace Border",
+      "Classic Crimson Red",
+      "Eye-Catching Party Drape"
+    ],
+    "isActive": true,
+    "createdAt": "2026-10-18T00:31:14.774Z"
+  }
+]

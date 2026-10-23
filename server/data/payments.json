@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "pay_sample_001",
+    "paymentId": "PAY-SS1001-001",
+    "orderId": "ord_sample_001",
+    "orderNumber": "SS1001",
+    "paymentProvider": "RAZORPAY_UPI",
+    "providerOrderId": "order_rzp_mock1001",
+    "providerPaymentId": "pay_rzp_mock10012026",
+    "upiReference": "UPI/6281928192/GPay",
+    "amount": 1499,
+    "currency": "INR",
+    "paymentStatus": "Paid",
+    "verificationDetails": {
+      "method": "Google Pay (UPI)",
+      "verifiedAt": "2026-10-16T06:15:23.673Z"
+    },
+    "createdAt": "2026-10-16T06:15:23.673Z",
+    "updatedAt": "2026-10-16T06:15:23.673Z"
+  },
+  {
+    "_id": "pay_2fy9lo9",
+    "paymentId": "PAY-SS1002-001",
+    "orderId": "ord_2fy9lo9",
+    "orderNumber": "SS1002",
+    "paymentProvider": "RAZORPAY_UPI",
+    "providerOrderId": "order_sree_1792304157643",
+    "providerPaymentId": "pay_test_gpay_1792304157653",
+    "upiReference": "UPI/pay_test_gpay_1792304157653",
+    "amount": 1499,
+    "currency": "INR",
+    "paymentStatus": "Paid",
+    "verificationDetails": {
+      "method": "Google Pay (UPI)",
+      "verifiedAt": "2026-10-18T06:15:57.653Z"
+    },
+    "createdAt": "2026-10-18T06:15:57.653Z",
+    "updatedAt": "2026-10-18T06:15:57.653Z"
+  },
+  {
+    "_id": "pay_p3g747f",
+    "paymentId": "PAY-SS1003-0626",
+    "orderId": "ord_xvd8lcv",
+    "orderNumber": "SS1003",
+    "paymentProvider": "RAZORPAY_UPI",
+    "providerOrderId": "order_sree_1792322550626_npv63",
+    "providerPaymentId": "pay_test_gpay_1792322550627",
+    "upiReference": "UPI/pay_test_gpay_1792322550627",
+    "amount": 1649,
+    "currency": "INR",
+    "paymentStatus": "Paid",
+    "verificationDetails": {
+      "method": "Google Pay / UPI",
+      "gatewayMode": "TEST_SANDBOX",
+      "amountInPaise": 164900,
+      "initiatedAt": "2026-10-18T11:22:30.626Z"
+    },
+    "createdAt": "2026-10-18T11:22:30.626Z",
+    "updatedAt": "2026-10-18T11:22:30.629Z"
+  },
+  {
+    "_id": "pay_v069qo5",
+    "paymentId": "PAY-SS1014-2248",
+    "orderId": "ord_3sv9am1",
+    "orderNumber": "SS1014",
+    "paymentProvider": "RAZORPAY_UPI",
+    "providerOrderId": "order_sree_1792772742248_7qw4i",
+    "providerPaymentId": "pay_gpay_test_MVL6LP4M",
+    "upiReference": "UPI/pay_gpay_test_MVL6LP4M",
+    "amount": 1699,
+    "currency": "INR",
+    "paymentStatus": "Paid",
+    "verificationDetails": {
+      "method": "Google Pay / UPI",
+      "gatewayMode": "TEST_SANDBOX",
+      "amountInPaise": 169900,
+      "initiatedAt": "2026-10-23T16:25:42.248Z"
+    },
+    "createdAt": "2026-10-23T16:25:42.250Z",
+    "updatedAt": "2026-10-23T16:25:42.286Z"
+  }
+]
